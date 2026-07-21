@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #e9e6df; font-family: 'Inter', sans-serif; }
+  a { color: #14655d; text-decoration: none; }
+  a:hover { color: #0f4f49; }
+  * { box-sizing: border-box; }
+</style>
+</helmet>
+
+<section data-turn="3" style="display:flex; flex-wrap:wrap; gap:80px; padding:72px; align-items:flex-start; background:#E8ECEF;">
+
+  <!-- ============ 3a — INSTRUMENT (magenta signal, cool neutrals) ============ -->
+  <div style="flex:0 0 auto; width:1280px;">
+  <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+    <span style="display:inline-flex; align-items:center; justify-content:center; height:30px; padding:0 12px; background:#11161C; color:#F3F5F6; font-size:13px; font-weight:600; letter-spacing:0.04em; border-radius:999px;">3a</span>
+    <span style="font-size:13px; font-weight:600; color:#4A5763; letter-spacing:0.02em;">Instrument · magenta signal on cool neutrals</span>
+  </div>
+  <div id="3a" data-screen-label="Palette 3a" style="position:relative; width:1280px; background:#F3F5F6; box-shadow:0 30px 80px rgb(17 22 28 / 0.2); border-radius:6px; overflow:hidden;">
+
+    <!-- Header -->
+    <header style="display:flex; align-items:center; justify-content:space-between; padding:22px 56px; background:#FFFFFF; border-bottom:1px solid #DCE2E6;">
+      <a href="/" style="font-family:'Fraunces',serif; font-size:20px; font-weight:700; color:#11161C; letter-spacing:-0.01em;">Deanna Glaze</a>
+      <nav style="display:flex; gap:32px;">
+        <a href="/" style="color:#11161C; font-size:14px; font-weight:500; border-bottom:2px solid #B81BC2; padding-bottom:3px;">Home</a>
+        <a href="/work" style="color:#4A5763; font-size:14px; font-weight:500;">Work</a>
+        <a href="/about" style="color:#4A5763; font-size:14px; font-weight:500;">About</a>
+        <a href="/designresources" style="color:#4A5763; font-size:14px; font-weight:500;">Design Resources</a>
+      </nav>
+    </header>
+
+    <!-- Hero (dark) -->
+    <section style="background:#0F1319; color:#E6EBF0; padding:64px 56px 88px;">
+      <div style="display:grid; grid-template-columns:1.55fr 0.9fr; gap:56px; align-items:center;">
+        <div>
+          <p style="margin:0 0 24px; display:inline-flex; align-items:center; gap:9px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#A8B2BC;"><span style="width:8px; height:8px; border-radius:50%; background:#D95BDC; display:inline-block; box-shadow:0 0 0 4px rgb(217 91 220 / 0.18);"></span>Product Design Leader · AI-UX</p>
+          <h1 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:66px; line-height:1.04; letter-spacing:-0.02em; color:#E6EBF0; max-width:16ch;">I make complex things clear with words, systems, and <span style="font-style:italic;">AI strategy</span>.</h1>
+          <p style="margin:32px 0 0; font-size:19px; line-height:1.6; color:#A8B2BC; max-width:52ch;">Two decades leading UX research, design teams, and product strategy — now helping teams ship AI experiences people actually trust.</p>
+          <div style="display:flex; gap:16px; margin-top:40px;">
+            <a href="/work" style="display:inline-flex; align-items:center; gap:8px; padding:15px 28px; background:#B81BC2; color:#FFFFFF; font-weight:600; font-size:15px; border-radius:999px;">Explore the work →</a>
+            <a href="/about" style="display:inline-flex; align-items:center; padding:15px 28px; border:1.5px solid #2A313A; color:#E6EBF0; font-weight:600; font-size:15px; border-radius:999px;">About me</a>
+          </div>
+        </div>
+        <div style="justify-self:center;">
+          <div style="width:280px; height:280px; border-radius:50%; background:#171C23; border:2px solid #2A313A; display:flex; align-items:center; justify-content:center; box-shadow:0 24px 60px rgb(0 0 0 / 0.5);">
+            <span style="font-family:'Fraunces',serif; font-size:96px; font-weight:600; color:#D95BDC;">DG</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI band (dark surface) -->
+    <section style="background:#171C23; color:#E6EBF0; padding:64px 56px; border-top:1px solid #2A313A;">
+      <div style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:start;">
+        <div>
+          <p style="margin:0 0 18px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#D95BDC;">AI-UX, with intention</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:38px; line-height:1.12; letter-spacing:-0.01em; color:#E6EBF0;">Start with why. Then earn trust.</h2>
+          <p style="margin:24px 0 0; font-size:17px; line-height:1.65; color:#A8B2BC;">I guide teams through a deliberate process that puts human agency first — clarifying goals, picking the right AI moments, and designing for transparency and safety. Then we ship, watch how it behaves in the wild, and keep evolving.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:16px;">
+          <div style="background:#1F252D; border:1px solid #2A313A; border-radius:12px; padding:22px;"><span style="font-family:'Fraunces',serif; font-size:22px; color:#D95BDC;">01</span><p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#E6EBF0;">Purpose first</p><p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#7C8792;">Real use cases and risks before a single interface.</p></div>
+          <div style="background:#1F252D; border:1px solid #2A313A; border-radius:12px; padding:22px;"><span style="font-family:'Fraunces',serif; font-size:22px; color:#D95BDC;">02</span><p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#E6EBF0;">Human agency</p><p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#7C8792;">People stay in control; AI assists, never overrides.</p></div>
+          <div style="background:#1F252D; border:1px solid #2A313A; border-radius:12px; padding:22px;"><span style="font-family:'Fraunces',serif; font-size:22px; color:#D95BDC;">03</span><p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#E6EBF0;">Transparency</p><p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#7C8792;">Privacy, consent, and accessibility as table stakes.</p></div>
+          <div style="background:#1F252D; border:1px solid #2A313A; border-radius:12px; padding:22px;"><span style="font-family:'Fraunces',serif; font-size:22px; color:#D95BDC;">04</span><p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#E6EBF0;">Ship &amp; evolve</p><p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#7C8792;">Observe behavior in the wild; review, learn, refine.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work showcase (list) -->
+    <section style="padding:72px 56px; background:#F3F5F6;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:44px;">
+        <div>
+          <p style="margin:0 0 12px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#8E0F97;">Selected work</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:42px; line-height:1.08; letter-spacing:-0.015em; color:#11161C;">Case studies across AI, health, and brand</h2>
+        </div>
+        <a href="/work" style="font-weight:600; font-size:15px; color:#8E0F97; white-space:nowrap;">All work →</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <!-- Lotic (AI — magenta preview + metric) -->
+        <a href="/work/lotic" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#FFFFFF; border:1px solid #B9C2C9; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(17 22 28 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#FCE9FA,#F6C4F2); border:1px solid #F6C4F2; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#8E0F97;">L</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#B81BC2;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8E0F97;">Lotic · AI product</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#11161C;">From concept to market in 90 days</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#4A5763; max-width:60ch;">Launching an AI-powered well-being insights platform under aggressive timelines and minimal upfront discovery.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">AI product strategy</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Conversational UI</span><span style="font-size:12px; font-weight:600; color:#8E0F97; background:#FCE9FA; border-radius:999px; padding:5px 12px;">+27% prompt completion</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#8A939B;">01</span>
+        </a>
+        <!-- Virgin Pulse -->
+        <a href="/work/vp" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#FFFFFF; border:1px solid #B9C2C9; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(17 22 28 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#E8ECEF,#B9C2C9); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#4A5763;">V</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#66707A;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#66707A;">Virgin Pulse · Platform strategy</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#11161C;">Modular, scalable platform strategy</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#4A5763; max-width:60ch;">Transforming a B2B2C wellness platform into a comprehensive, configurable health management solution.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Design strategy</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Service blueprint</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">200+ members researched</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#8A939B;">02</span>
+        </a>
+        <!-- Loft -->
+        <a href="/work/loft" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#FFFFFF; border:1px solid #B9C2C9; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(17 22 28 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#F3F5F6,#DCE2E6); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#2C353F;">L</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#66707A;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#66707A;">Loft.Design · Brand &amp; story</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#11161C;">Rebranding through user-centered storytelling</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#4A5763; max-width:60ch;">A comprehensive rebrand: a redesigned marketing site and a new agency reel that communicate value and creative impact.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Content strategy</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Creative direction</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Facilitation</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#8A939B;">03</span>
+        </a>
+        <!-- Amazon Convergence -->
+        <a href="/work/amazon-convergence" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#FFFFFF; border:1px solid #B9C2C9; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(17 22 28 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#E8ECEF,#B9C2C9); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#2C353F;">A</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#66707A;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#66707A;">Amazon · Systems</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#11161C;">Books: Convergence Project</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#4A5763; max-width:60ch;">Unifying the books experience across Amazon with systems thinking that scales across feature teams.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">UX design</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Systems thinking</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#8A939B;">04</span>
+        </a>
+        <!-- Amazon Kindle -->
+        <a href="/work/amazon" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#FFFFFF; border:1px solid #B9C2C9; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(17 22 28 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#F3F5F6,#DCE2E6); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#2C353F;">A</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#66707A;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#66707A;">Amazon · Enterprise UX</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#11161C;">Kindle Enterprise Publishing</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#4A5763; max-width:60ch;">Streamlining fragmented workflows so publishers can manage every title format from one clear dashboard.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Design sprints</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">User research</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Prototyping</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#8A939B;">05</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Values condensed -->
+    <section style="padding:64px 56px; background:#E8ECEF; border-top:1px solid #DCE2E6;">
+      <p style="margin:0 0 24px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#8E0F97;">How I work</p>
+      <p style="margin:0; font-family:'Fraunces',serif; font-weight:500; font-size:30px; line-height:1.35; letter-spacing:-0.01em; color:#11161C; max-width:34ch;">Inclusive by default. Evidence-led. Systems that do the heavy lifting. And AI designed with intention.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:36px; margin-top:32px;">
+        <span style="font-size:15px; font-weight:600; color:#4A5763; border-left:2px solid #8A939B; padding-left:14px;">Clarity &amp; shared ownership</span>
+        <span style="font-size:15px; font-weight:600; color:#4A5763; border-left:2px solid #8A939B; padding-left:14px;">Evidence-led strategy</span>
+        <span style="font-size:15px; font-weight:600; color:#4A5763; border-left:2px solid #8A939B; padding-left:14px;">Systems-level impact</span>
+        <span style="font-size:15px; font-weight:600; color:#4A5763; border-left:2px solid #8A939B; padding-left:14px;">AI with intention</span>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding:80px 56px; background:#0F1319; color:#E6EBF0; text-align:center;">
+      <h2 style="margin:0 auto; font-family:'Fraunces',serif; font-weight:600; font-size:40px; line-height:1.1; letter-spacing:-0.01em; color:#E6EBF0; max-width:20ch;">See the thinking behind the work</h2>
+      <p style="margin:18px auto 0; font-size:17px; line-height:1.6; color:#A8B2BC; max-width:46ch;">Dive into the full case studies — the research, the trade-offs, and the outcomes.</p>
+      <a href="/work" style="display:inline-flex; align-items:center; gap:8px; margin-top:34px; padding:16px 34px; background:#B81BC2; color:#FFFFFF; font-weight:600; font-size:16px; border-radius:999px;">Explore case studies →</a>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background:#11161C; color:#E6EBF0; padding:44px 56px; display:flex; align-items:center; justify-content:space-between;">
+      <div>
+        <p style="margin:0; font-family:'Fraunces',serif; font-weight:700; font-size:17px;">Deanna Glaze</p>
+        <p style="margin:6px 0 0; font-size:13px; color:#7C8792; max-width:36ch;">Making complex things clear with words, systems, and AI strategy.</p>
+      </div>
+      <div style="display:flex; gap:24px;">
+        <a href="https://www.linkedin.com/in/deannaglaze" style="color:#A8B2BC; font-size:13px;">LinkedIn</a>
+        <a href="https://www.instagram.com/monkeyshineme/" style="color:#A8B2BC; font-size:13px;">Instagram</a>
+      </div>
+    </footer>
+  </div>
+  </div>
+
+  <!-- ============ 3b — INSTRUMENT LIGHT (magenta signal, all light) ============ -->
+  <div style="flex:0 0 auto; width:1280px;">
+  <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+    <span style="display:inline-flex; align-items:center; justify-content:center; height:30px; padding:0 12px; background:#11161C; color:#F3F5F6; font-size:13px; font-weight:600; letter-spacing:0.04em; border-radius:999px;">3b</span>
+    <span style="font-size:13px; font-weight:600; color:#4A5763; letter-spacing:0.02em;">Instrument light · same palette, light throughout</span>
+  </div>
+  <div id="3b" data-screen-label="Palette 3b" style="position:relative; width:1280px; background:#F3F5F6; box-shadow:0 30px 80px rgb(17 22 28 / 0.2); border-radius:6px; overflow:hidden;">
+
+    <!-- Header -->
+    <header style="display:flex; align-items:center; justify-content:space-between; padding:22px 56px; background:#FFFFFF; border-bottom:1px solid #DCE2E6;">
+      <a href="/" style="font-family:'Fraunces',serif; font-size:20px; font-weight:700; color:#11161C; letter-spacing:-0.01em;">Deanna Glaze</a>
+      <nav style="display:flex; gap:32px;">
+        <a href="/" style="color:#11161C; font-size:14px; font-weight:500; border-bottom:2px solid #B81BC2; padding-bottom:3px;">Home</a>
+        <a href="/work" style="color:#4A5763; font-size:14px; font-weight:500;">Work</a>
+        <a href="/about" style="color:#4A5763; font-size:14px; font-weight:500;">About</a>
+        <a href="/designresources" style="color:#4A5763; font-size:14px; font-weight:500;">Design Resources</a>
+      </nav>
+    </header>
+
+    <!-- Hero (light) -->
+    <section style="background:#F3F5F6; color:#11161C; padding:64px 56px 88px;">
+      <div style="display:grid; grid-template-columns:1.55fr 0.9fr; gap:56px; align-items:center;">
+        <div>
+          <p style="margin:0 0 24px; display:inline-flex; align-items:center; gap:9px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#4A5763;"><span style="width:8px; height:8px; border-radius:50%; background:#B81BC2; display:inline-block; box-shadow:0 0 0 4px rgb(184 27 194 / 0.14);"></span>Product Design Leader · AI-UX</p>
+          <h1 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:66px; line-height:1.04; letter-spacing:-0.02em; color:#11161C; max-width:16ch;">I make complex things clear with words, systems, and <span style="font-style:italic;">AI strategy</span>.</h1>
+          <p style="margin:32px 0 0; font-size:19px; line-height:1.6; color:#4A5763; max-width:52ch;">Two decades leading UX research, design teams, and product strategy — now helping teams ship AI experiences people actually trust.</p>
+          <div style="display:flex; gap:16px; margin-top:40px;">
+            <a href="/work" style="display:inline-flex; align-items:center; gap:8px; padding:15px 28px; background:#B81BC2; color:#FFFFFF; font-weight:600; font-size:15px; border-radius:999px;">Explore the work →</a>
+            <a href="/about" style="display:inline-flex; align-items:center; padding:15px 28px; border:1.5px solid #B9C2C9; color:#11161C; font-weight:600; font-size:15px; border-radius:999px;">About me</a>
+          </div>
+        </div>
+        <div style="justify-self:center;">
+          <div style="width:280px; height:280px; border-radius:50%; background:#FFFFFF; border:2px solid #B81BC2; display:flex; align-items:center; justify-content:center; box-shadow:0 24px 60px rgb(17 22 28 / 0.12);">
+            <span style="font-family:'Fraunces',serif; font-size:96px; font-weight:600; color:#8E0F97;">DG</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI band (magenta tint) -->
+    <section style="background:#FCE9FA; color:#11161C; padding:64px 56px; border-top:1px solid #F6C4F2; border-bottom:1px solid #F6C4F2;">
+      <div style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:start;">
+        <div>
+          <p style="margin:0 0 18px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#8E0F97;">AI-UX, with intention</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:38px; line-height:1.12; letter-spacing:-0.01em; color:#11161C;">Start with why. Then earn trust.</h2>
+          <p style="margin:24px 0 0; font-size:17px; line-height:1.65; color:#5C0A63;">I guide teams through a deliberate process that puts human agency first — clarifying goals, picking the right AI moments, and designing for transparency and safety. Then we ship, watch how it behaves in the wild, and keep evolving.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:16px;">
+          <div style="background:#FFFFFF; border:1px solid #F6C4F2; border-radius:12px; padding:22px;"><span style="font-family:'Fraunces',serif; font-size:22px; color:#B81BC2;">01</span><p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#11161C;">Purpose first</p><p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#4A5763;">Real use cases and risks before a single interface.</p></div>
+          <div style="background:#FFFFFF; border:1px solid #F6C4F2; border-radius:12px; padding:22px;"><span style="font-family:'Fraunces',serif; font-size:22px; color:#B81BC2;">02</span><p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#11161C;">Human agency</p><p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#4A5763;">People stay in control; AI assists, never overrides.</p></div>
+          <div style="background:#FFFFFF; border:1px solid #F6C4F2; border-radius:12px; padding:22px;"><span style="font-family:'Fraunces',serif; font-size:22px; color:#B81BC2;">03</span><p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#11161C;">Transparency</p><p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#4A5763;">Privacy, consent, and accessibility as table stakes.</p></div>
+          <div style="background:#FFFFFF; border:1px solid #F6C4F2; border-radius:12px; padding:22px;"><span style="font-family:'Fraunces',serif; font-size:22px; color:#B81BC2;">04</span><p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#11161C;">Ship &amp; evolve</p><p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#4A5763;">Observe behavior in the wild; review, learn, refine.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work showcase (list) -->
+    <section style="padding:72px 56px; background:#F3F5F6;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:44px;">
+        <div>
+          <p style="margin:0 0 12px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#8E0F97;">Selected work</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:42px; line-height:1.08; letter-spacing:-0.015em; color:#11161C;">Case studies across AI, health, and brand</h2>
+        </div>
+        <a href="/work" style="font-weight:600; font-size:15px; color:#8E0F97; white-space:nowrap;">All work →</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <a href="/work/lotic" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#FFFFFF; border:1px solid #B9C2C9; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(17 22 28 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#FCE9FA,#F6C4F2); border:1px solid #F6C4F2; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#8E0F97;">L</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#B81BC2;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8E0F97;">Lotic · AI product</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#11161C;">From concept to market in 90 days</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#4A5763; max-width:60ch;">Launching an AI-powered well-being insights platform under aggressive timelines and minimal upfront discovery.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">AI product strategy</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Conversational UI</span><span style="font-size:12px; font-weight:600; color:#8E0F97; background:#FCE9FA; border-radius:999px; padding:5px 12px;">+27% prompt completion</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#8A939B;">01</span>
+        </a>
+        <a href="/work/vp" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#FFFFFF; border:1px solid #B9C2C9; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(17 22 28 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#E8ECEF,#B9C2C9); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#4A5763;">V</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#66707A;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#66707A;">Virgin Pulse · Platform strategy</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#11161C;">Modular, scalable platform strategy</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#4A5763; max-width:60ch;">Transforming a B2B2C wellness platform into a comprehensive, configurable health management solution.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Design strategy</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Service blueprint</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">200+ members researched</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#8A939B;">02</span>
+        </a>
+        <a href="/work/loft" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#FFFFFF; border:1px solid #B9C2C9; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(17 22 28 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#F3F5F6,#DCE2E6); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#2C353F;">L</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#66707A;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#66707A;">Loft.Design · Brand &amp; story</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#11161C;">Rebranding through user-centered storytelling</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#4A5763; max-width:60ch;">A comprehensive rebrand: a redesigned marketing site and a new agency reel that communicate value and creative impact.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Content strategy</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Creative direction</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Facilitation</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#8A939B;">03</span>
+        </a>
+        <a href="/work/amazon-convergence" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#FFFFFF; border:1px solid #B9C2C9; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(17 22 28 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#E8ECEF,#B9C2C9); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#2C353F;">A</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#66707A;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#66707A;">Amazon · Systems</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#11161C;">Books: Convergence Project</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#4A5763; max-width:60ch;">Unifying the books experience across Amazon with systems thinking that scales across feature teams.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">UX design</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Systems thinking</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#8A939B;">04</span>
+        </a>
+        <a href="/work/amazon" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#FFFFFF; border:1px solid #B9C2C9; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(17 22 28 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#F3F5F6,#DCE2E6); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#2C353F;">A</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#66707A;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#66707A;">Amazon · Enterprise UX</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#11161C;">Kindle Enterprise Publishing</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#4A5763; max-width:60ch;">Streamlining fragmented workflows so publishers can manage every title format from one clear dashboard.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Design sprints</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">User research</span><span style="font-size:12px; font-weight:500; color:#4A5763; background:#E8ECEF; border-radius:999px; padding:5px 12px;">Prototyping</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#8A939B;">05</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Values condensed -->
+    <section style="padding:64px 56px; background:#FFFFFF; border-top:1px solid #DCE2E6;">
+      <p style="margin:0 0 24px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#8E0F97;">How I work</p>
+      <p style="margin:0; font-family:'Fraunces',serif; font-weight:500; font-size:30px; line-height:1.35; letter-spacing:-0.01em; color:#11161C; max-width:34ch;">Inclusive by default. Evidence-led. Systems that do the heavy lifting. And AI designed with intention.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:36px; margin-top:32px;">
+        <span style="font-size:15px; font-weight:600; color:#4A5763; border-left:2px solid #8A939B; padding-left:14px;">Clarity &amp; shared ownership</span>
+        <span style="font-size:15px; font-weight:600; color:#4A5763; border-left:2px solid #8A939B; padding-left:14px;">Evidence-led strategy</span>
+        <span style="font-size:15px; font-weight:600; color:#4A5763; border-left:2px solid #8A939B; padding-left:14px;">Systems-level impact</span>
+        <span style="font-size:15px; font-weight:600; color:#4A5763; border-left:2px solid #8A939B; padding-left:14px;">AI with intention</span>
+      </div>
+    </section>
+
+    <!-- CTA (light) -->
+    <section style="padding:80px 56px; background:#E8ECEF; text-align:center; border-top:1px solid #DCE2E6;">
+      <h2 style="margin:0 auto; font-family:'Fraunces',serif; font-weight:600; font-size:40px; line-height:1.1; letter-spacing:-0.01em; color:#11161C; max-width:20ch;">See the thinking behind the work</h2>
+      <p style="margin:18px auto 0; font-size:17px; line-height:1.6; color:#4A5763; max-width:46ch;">Dive into the full case studies — the research, the trade-offs, and the outcomes.</p>
+      <a href="/work" style="display:inline-flex; align-items:center; gap:8px; margin-top:34px; padding:16px 34px; background:#B81BC2; color:#FFFFFF; font-weight:600; font-size:16px; border-radius:999px;">Explore case studies →</a>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background:#11161C; color:#E6EBF0; padding:44px 56px; display:flex; align-items:center; justify-content:space-between;">
+      <div>
+        <p style="margin:0; font-family:'Fraunces',serif; font-weight:700; font-size:17px;">Deanna Glaze</p>
+        <p style="margin:6px 0 0; font-size:13px; color:#7C8792; max-width:36ch;">Making complex things clear with words, systems, and AI strategy.</p>
+      </div>
+      <div style="display:flex; gap:24px;">
+        <a href="https://www.linkedin.com/in/deannaglaze" style="color:#A8B2BC; font-size:13px;">LinkedIn</a>
+        <a href="https://www.instagram.com/monkeyshineme/" style="color:#A8B2BC; font-size:13px;">Instagram</a>
+      </div>
+    </footer>
+  </div>
+  </div>
+
+  <!-- ============ 3c — INSTRUMENT GRADIENT (continuous vertical magenta) ============ -->
+  <div style="flex:0 0 auto; width:1280px;">
+  <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+    <span style="display:inline-flex; align-items:center; justify-content:center; height:30px; padding:0 12px; background:#11161C; color:#F3F5F6; font-size:13px; font-weight:600; letter-spacing:0.04em; border-radius:999px;">3c</span>
+    <span style="font-size:13px; font-weight:600; color:#4A5763; letter-spacing:0.02em;">Instrument gradient · reduced wash, layered surfaces</span>
+  </div>
+  <div id="3c" data-screen-label="Palette 3c" style="position:relative; width:1280px; background:linear-gradient(180deg,#120A16 0%,#1B0D22 20%,#241030 38%,#331442 55%,#251030 72%,#180B1E 88%,#120A16 100%); box-shadow:0 30px 80px rgb(17 22 28 / 0.28); border-radius:6px; overflow:hidden;">
+
+    <!-- Header (transparent over gradient) -->
+    <header style="display:flex; align-items:center; justify-content:space-between; padding:22px 56px; background:transparent; border-bottom:1px solid rgb(255 255 255 / 0.09);">
+      <a href="/" style="font-family:'Fraunces',serif; font-size:20px; font-weight:700; color:#F2F4F6; letter-spacing:-0.01em;">Deanna Glaze</a>
+      <nav style="display:flex; gap:32px;">
+        <a href="/" style="color:#F2F4F6; font-size:14px; font-weight:500; border-bottom:2px solid #B81BC2; padding-bottom:3px;">Home</a>
+        <a href="/work" style="color:#B9C2C9; font-size:14px; font-weight:500;">Work</a>
+        <a href="/about" style="color:#B9C2C9; font-size:14px; font-weight:500;">About</a>
+        <a href="/designresources" style="color:#B9C2C9; font-size:14px; font-weight:500;">Design Resources</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section style="background:transparent; color:#F2F4F6; padding:64px 56px 80px;">
+      <div style="display:grid; grid-template-columns:1.55fr 0.9fr; gap:56px; align-items:center;">
+        <div>
+          <p style="margin:0 0 24px; display:inline-flex; align-items:center; gap:9px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#8A939B;"><span style="width:8px; height:8px; border-radius:50%; background:#8A939B; display:inline-block;"></span>Product Design Leader · AI-UX</p>
+          <h1 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:66px; line-height:1.04; letter-spacing:-0.02em; color:#F2F4F6; max-width:16ch;">I make complex things clear with words, systems, and <span style="font-style:italic;">AI strategy</span>.</h1>
+          <p style="margin:32px 0 0; font-size:19px; line-height:1.6; color:#B9C2C9; max-width:52ch;">Two decades leading UX research, design teams, and product strategy — now helping teams ship AI experiences people actually trust.</p>
+          <div style="display:flex; gap:16px; margin-top:40px;">
+            <a href="/work" style="display:inline-flex; align-items:center; gap:8px; padding:15px 28px; background:#B81BC2; color:#FFFFFF; font-weight:600; font-size:15px; border-radius:999px;">Explore the work →</a>
+            <a href="/about" style="display:inline-flex; align-items:center; padding:15px 28px; border:1px solid rgb(255 255 255 / 0.22); color:#F2F4F6; font-weight:600; font-size:15px; border-radius:999px;">About me</a>
+          </div>
+        </div>
+        <div style="justify-self:center;">
+          <div style="width:280px; height:280px; border-radius:50%; background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.12); display:flex; align-items:center; justify-content:center;">
+            <span style="font-family:'Fraunces',serif; font-size:96px; font-weight:600; color:#F2F4F6;">DG</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI band (glass) -->
+    <section style="background:transparent; color:#F2F4F6; padding:56px 56px;">
+      <div style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:start; background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:44px;">
+        <div>
+          <p style="margin:0 0 18px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#8A939B;">AI-UX, with intention</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:38px; line-height:1.12; letter-spacing:-0.01em; color:#F2F4F6;">Start with why. Then earn trust.</h2>
+          <p style="margin:24px 0 0; font-size:17px; line-height:1.65; color:#B9C2C9;">I guide teams through a deliberate process that puts human agency first — clarifying goals, picking the right AI moments, and designing for transparency and safety. Then we ship, watch how it behaves in the wild, and keep evolving.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:16px;">
+          <div style="background:rgb(255 255 255 / 0.07); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:22px;"><span style="font-family:'Fraunces',serif; font-size:22px; color:#8A939B;">01</span><p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#F2F4F6;">Purpose first</p><p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#B9C2C9;">Real use cases and risks before a single interface.</p></div>
+          <div style="background:rgb(255 255 255 / 0.07); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:22px;"><span style="font-family:'Fraunces',serif; font-size:22px; color:#8A939B;">02</span><p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#F2F4F6;">Human agency</p><p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#B9C2C9;">People stay in control; AI assists, never overrides.</p></div>
+          <div style="background:rgb(255 255 255 / 0.07); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:22px;"><span style="font-family:'Fraunces',serif; font-size:22px; color:#8A939B;">03</span><p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#F2F4F6;">Transparency</p><p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#B9C2C9;">Privacy, consent, and accessibility as table stakes.</p></div>
+          <div style="background:rgb(255 255 255 / 0.07); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:22px;"><span style="font-family:'Fraunces',serif; font-size:22px; color:#8A939B;">04</span><p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#F2F4F6;">Ship &amp; evolve</p><p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#B9C2C9;">Observe behavior in the wild; review, learn, refine.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work showcase (glass rows) -->
+    <section style="padding:36px 56px 56px; background:transparent;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:36px;">
+        <div>
+          <p style="margin:0 0 12px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#8A939B;">Selected work</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:42px; line-height:1.08; letter-spacing:-0.015em; color:#F2F4F6;">Case studies across AI, health, and brand</h2>
+        </div>
+        <a href="/work" style="font-weight:600; font-size:15px; color:#D95BDC; white-space:nowrap;">All work →</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <a href="/work/lotic" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:24px;">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:rgb(255 255 255 / 0.07); border:1px solid rgb(255 255 255 / 0.09); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#B9C2C9;">L</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8A939B;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">Lotic · AI product</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#F2F4F6;">From concept to market in 90 days</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#B9C2C9; max-width:60ch;">Launching an AI-powered well-being insights platform under aggressive timelines and minimal upfront discovery.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">AI product strategy</span><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">Conversational UI</span><span style="font-size:12px; font-weight:600; color:#FFFFFF; background:#B81BC2; border-radius:999px; padding:5px 12px;">+27% prompt completion</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:rgb(255 255 255 / 0.14);">01</span>
+        </a>
+        <a href="/work/vp" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:24px;">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:rgb(255 255 255 / 0.07); border:1px solid rgb(255 255 255 / 0.09); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#B9C2C9;">V</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8A939B;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">Virgin Pulse · Platform strategy</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#F2F4F6;">Modular, scalable platform strategy</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#B9C2C9; max-width:60ch;">Transforming a B2B2C wellness platform into a comprehensive, configurable health management solution.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">Design strategy</span><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">Service blueprint</span><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">200+ members researched</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:rgb(255 255 255 / 0.14);">02</span>
+        </a>
+        <a href="/work/loft" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:24px;">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:rgb(255 255 255 / 0.07); border:1px solid rgb(255 255 255 / 0.09); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#B9C2C9;">L</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8A939B;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">Loft.Design · Brand &amp; story</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#F2F4F6;">Rebranding through user-centered storytelling</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#B9C2C9; max-width:60ch;">A comprehensive rebrand: a redesigned marketing site and a new agency reel that communicate value and creative impact.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">Content strategy</span><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">Creative direction</span><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">Facilitation</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:rgb(255 255 255 / 0.14);">03</span>
+        </a>
+        <a href="/work/amazon-convergence" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:24px;">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:rgb(255 255 255 / 0.07); border:1px solid rgb(255 255 255 / 0.09); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#B9C2C9;">A</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8A939B;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">Amazon · Systems</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#F2F4F6;">Books: Convergence Project</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#B9C2C9; max-width:60ch;">Unifying the books experience across Amazon with systems thinking that scales across feature teams.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">UX design</span><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">Systems thinking</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:rgb(255 255 255 / 0.14);">04</span>
+        </a>
+        <a href="/work/amazon" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:24px;">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:rgb(255 255 255 / 0.07); border:1px solid rgb(255 255 255 / 0.09); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#B9C2C9;">A</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8A939B;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">Amazon · Enterprise UX</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#F2F4F6;">Kindle Enterprise Publishing</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#B9C2C9; max-width:60ch;">Streamlining fragmented workflows so publishers can manage every title format from one clear dashboard.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">Design sprints</span><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">User research</span><span style="font-size:12px; font-weight:500; color:#B9C2C9; background:rgb(255 255 255 / 0.06); border-radius:999px; padding:5px 12px;">Prototyping</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:rgb(255 255 255 / 0.14);">05</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Values condensed (glass) -->
+    <section style="padding:20px 56px 56px; background:transparent;">
+      <div style="background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:44px;">
+        <p style="margin:0 0 24px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#8A939B;">How I work</p>
+        <p style="margin:0; font-family:'Fraunces',serif; font-weight:500; font-size:30px; line-height:1.35; letter-spacing:-0.01em; color:#F2F4F6; max-width:34ch;">Inclusive by default. Evidence-led. Systems that do the heavy lifting. And AI designed with intention.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:36px; margin-top:32px;">
+          <span style="font-size:15px; font-weight:600; color:#B9C2C9; border-left:2px solid rgb(255 255 255 / 0.22); padding-left:14px;">Clarity &amp; shared ownership</span>
+          <span style="font-size:15px; font-weight:600; color:#B9C2C9; border-left:2px solid rgb(255 255 255 / 0.22); padding-left:14px;">Evidence-led strategy</span>
+          <span style="font-size:15px; font-weight:600; color:#B9C2C9; border-left:2px solid rgb(255 255 255 / 0.22); padding-left:14px;">Systems-level impact</span>
+          <span style="font-size:15px; font-weight:600; color:#B9C2C9; border-left:2px solid rgb(255 255 255 / 0.22); padding-left:14px;">AI with intention</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding:56px 56px 88px; background:transparent; text-align:center;">
+      <h2 style="margin:0 auto; font-family:'Fraunces',serif; font-weight:600; font-size:40px; line-height:1.1; letter-spacing:-0.01em; color:#F2F4F6; max-width:20ch;">See the thinking behind the work</h2>
+      <p style="margin:18px auto 0; font-size:17px; line-height:1.6; color:#B9C2C9; max-width:46ch;">Dive into the full case studies — the research, the trade-offs, and the outcomes.</p>
+      <a href="/work" style="display:inline-flex; align-items:center; gap:8px; margin-top:34px; padding:16px 34px; background:#B81BC2; color:#FFFFFF; font-weight:600; font-size:16px; border-radius:999px;">Explore case studies →</a>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background:transparent; color:#F2F4F6; padding:44px 56px; display:flex; align-items:center; justify-content:space-between;">
+      <div>
+        <p style="margin:0; font-family:'Fraunces',serif; font-weight:700; font-size:17px;">Deanna Glaze</p>
+        <p style="margin:6px 0 0; font-size:13px; color:#B9C2C9; max-width:36ch;">Making complex things clear with words, systems, and AI strategy.</p>
+      </div>
+      <div style="display:flex; gap:24px;">
+        <a href="https://www.linkedin.com/in/deannaglaze" style="color:#B9C2C9; font-size:13px;">LinkedIn</a>
+        <a href="https://www.instagram.com/monkeyshineme/" style="color:#B9C2C9; font-size:13px;">Instagram</a>
+      </div>
+    </footer>
+  </div>
+  </div>
+
+</section>
+
+<section data-turn="2" style="display:flex; flex-wrap:wrap; gap:80px; padding:72px; align-items:flex-start; background:#e9e6df;">
+
+  <!-- ============ 2a — CORAL EMBER (coral drives, ink base) ============ -->
+  <div style="flex:0 0 auto; width:1100px;">
+  <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+    <span style="display:inline-flex; align-items:center; justify-content:center; height:30px; padding:0 12px; background:#1b1916; color:#faf9f7; font-size:13px; font-weight:600; letter-spacing:0.04em; border-radius:999px;">2a</span>
+    <span style="font-size:13px; font-weight:600; color:#5c564e; letter-spacing:0.02em;">Coral ember · coral drives emphasis</span>
+  </div>
+  <div id="2a" data-screen-label="Palette 2a" style="position:relative; width:1100px; background:#faf9f7; box-shadow:0 30px 80px rgb(27 25 22 / 0.18); border-radius:6px; overflow:hidden;">
+    <header style="display:flex; align-items:center; justify-content:space-between; padding:20px 48px; background:#1b1916; color:#faf9f7;">
+      <span style="font-family:'Fraunces',serif; font-size:19px; font-weight:700;">Deanna Glaze</span>
+      <nav style="display:flex; gap:28px;">
+        <a href="/" style="color:#faf9f7; font-size:14px; font-weight:500; border-bottom:2px solid #e87456; padding-bottom:3px;">Home</a>
+        <a href="/work" style="color:#cfcac0; font-size:14px; font-weight:500;">Work</a>
+        <a href="/about" style="color:#cfcac0; font-size:14px; font-weight:500;">About</a>
+        <a href="/designresources" style="color:#cfcac0; font-size:14px; font-weight:500;">Design Resources</a>
+      </nav>
+    </header>
+    <section style="background:#1b1916; color:#faf9f7; padding:60px 48px 76px;">
+      <div style="display:grid; grid-template-columns:1.55fr 0.9fr; gap:48px; align-items:center;">
+        <div>
+          <p style="margin:0 0 22px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#f29e86;">Product Design Leader · AI-UX</p>
+          <h1 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:58px; line-height:1.04; letter-spacing:-0.02em; max-width:16ch;">I make complex things clear with words, systems, and <span style="color:#e87456; font-style:italic;">AI strategy</span>.</h1>
+          <p style="margin:28px 0 0; font-size:18px; line-height:1.6; color:#cfcac0; max-width:52ch;">Two decades leading UX research, design teams, and product strategy — now helping teams ship AI experiences people actually trust.</p>
+          <div style="display:flex; gap:14px; margin-top:36px;">
+            <a href="/work" style="display:inline-flex; align-items:center; gap:8px; padding:14px 26px; background:#e87456; color:#1b1916; font-weight:600; font-size:15px; border-radius:999px;">Explore the work →</a>
+            <a href="/about" style="display:inline-flex; align-items:center; padding:14px 26px; border:1.5px solid #423d37; color:#faf9f7; font-weight:600; font-size:15px; border-radius:999px;">About me</a>
+          </div>
+        </div>
+        <div style="justify-self:center;">
+          <div style="width:240px; height:240px; border-radius:50%; background:linear-gradient(140deg,#e87456,#a83f27); display:flex; align-items:center; justify-content:center; box-shadow:0 24px 60px rgb(0 0 0 / 0.45);">
+            <span style="font-family:'Fraunces',serif; font-size:84px; font-weight:600; color:#fdeae4;">DG</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="background:#d05336; color:#fdeae4; padding:56px 48px;">
+      <div style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:48px; align-items:start;">
+        <div>
+          <p style="margin:0 0 16px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#f9cabc;">AI-UX, with intention</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:34px; line-height:1.12; color:#fff;">Start with why. Then earn trust.</h2>
+          <p style="margin:20px 0 0; font-size:16px; line-height:1.65; color:#fde3d8;">A deliberate process that puts human agency first — clarifying goals, choosing the right AI moments, and designing for transparency and safety.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:14px;">
+          <div style="background:rgb(255 255 255 / 0.12); border:1px solid rgb(255 255 255 / 0.2); border-radius:12px; padding:20px;"><span style="font-family:'Fraunces',serif; font-size:20px; color:#fff;">01</span><p style="margin:8px 0 0; font-weight:600; font-size:15px; color:#fff;">Purpose first</p></div>
+          <div style="background:rgb(255 255 255 / 0.12); border:1px solid rgb(255 255 255 / 0.2); border-radius:12px; padding:20px;"><span style="font-family:'Fraunces',serif; font-size:20px; color:#fff;">02</span><p style="margin:8px 0 0; font-weight:600; font-size:15px; color:#fff;">Human agency</p></div>
+          <div style="background:rgb(255 255 255 / 0.12); border:1px solid rgb(255 255 255 / 0.2); border-radius:12px; padding:20px;"><span style="font-family:'Fraunces',serif; font-size:20px; color:#fff;">03</span><p style="margin:8px 0 0; font-weight:600; font-size:15px; color:#fff;">Transparency</p></div>
+          <div style="background:rgb(255 255 255 / 0.12); border:1px solid rgb(255 255 255 / 0.2); border-radius:12px; padding:20px;"><span style="font-family:'Fraunces',serif; font-size:20px; color:#fff;">04</span><p style="margin:8px 0 0; font-weight:600; font-size:15px; color:#fff;">Ship &amp; evolve</p></div>
+        </div>
+      </div>
+    </section>
+    <section style="padding:60px 48px; background:#faf9f7;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:36px;">
+        <div>
+          <p style="margin:0 0 10px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#d05336;">Selected work</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:36px; line-height:1.08; color:#1b1916;">Case studies across AI, health, and brand</h2>
+        </div>
+        <a href="/work" style="font-weight:600; font-size:15px; color:#d05336; white-space:nowrap;">All work →</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <a href="/work/lotic" style="display:grid; grid-template-columns:300px 1fr auto; gap:32px; align-items:center; background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:22px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#fdeae4,#f29e86); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:52px; font-weight:600; color:#a83f27;">L</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#d05336;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#d05336;">Lotic · AI product</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:24px; line-height:1.15; color:#1b1916;">From concept to market in 90 days</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#5c564e; max-width:58ch;">Launching an AI-powered well-being insights platform under aggressive timelines.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">AI product strategy</span><span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">+27% prompt completion</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:38px; font-weight:500; color:#cfcac0;">01</span>
+        </a>
+        <a href="/work/vp" style="display:grid; grid-template-columns:300px 1fr auto; gap:32px; align-items:center; background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:22px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#f3f1ed,#e5e2db); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:52px; font-weight:600; color:#5c564e;">V</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#7d766c;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#d05336;">Virgin Pulse · Platform strategy</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:24px; line-height:1.15; color:#1b1916;">Modular, scalable platform strategy</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#5c564e; max-width:58ch;">Transforming a B2B2C wellness platform into a configurable health management solution.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">Design strategy</span><span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">200+ members researched</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:38px; font-weight:500; color:#cfcac0;">02</span>
+        </a>
+        <p style="margin:4px 0 0; font-size:14px; font-weight:500; color:#7d766c; text-align:center;">+ Loft.Design, Amazon Convergence &amp; Kindle Enterprise Publishing</p>
+      </div>
+    </section>
+    <section style="padding:70px 48px; background:#1b1916; color:#faf9f7; text-align:center;">
+      <h2 style="margin:0 auto; font-family:'Fraunces',serif; font-weight:600; font-size:36px; line-height:1.1; max-width:20ch;">See the thinking behind the work</h2>
+      <a href="/work" style="display:inline-flex; align-items:center; gap:8px; margin-top:28px; padding:15px 32px; background:#e87456; color:#1b1916; font-weight:600; font-size:16px; border-radius:999px;">Explore case studies →</a>
+    </section>
+  </div>
+  </div>
+
+  <!-- ============ 2b — TEAL & GOLD (teal drives, gold pop, light) ============ -->
+  <div style="flex:0 0 auto; width:1100px;">
+  <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+    <span style="display:inline-flex; align-items:center; justify-content:center; height:30px; padding:0 12px; background:#1b1916; color:#faf9f7; font-size:13px; font-weight:600; letter-spacing:0.04em; border-radius:999px;">2b</span>
+    <span style="font-size:13px; font-weight:600; color:#5c564e; letter-spacing:0.02em;">Teal &amp; gold · teal drives, gold accents</span>
+  </div>
+  <div id="2b" data-screen-label="Palette 2b" style="position:relative; width:1100px; background:#faf9f7; box-shadow:0 30px 80px rgb(27 25 22 / 0.18); border-radius:6px; overflow:hidden;">
+    <header style="display:flex; align-items:center; justify-content:space-between; padding:20px 48px; background:#faf9f7; border-bottom:1px solid #e5e2db;">
+      <span style="font-family:'Fraunces',serif; font-size:19px; font-weight:700; color:#1b1916;">Deanna Glaze</span>
+      <nav style="display:flex; gap:28px;">
+        <a href="/" style="color:#1b1916; font-size:14px; font-weight:500; border-bottom:2px solid #1f7d73; padding-bottom:3px;">Home</a>
+        <a href="/work" style="color:#5c564e; font-size:14px; font-weight:500;">Work</a>
+        <a href="/about" style="color:#5c564e; font-size:14px; font-weight:500;">About</a>
+        <a href="/designresources" style="color:#5c564e; font-size:14px; font-weight:500;">Design Resources</a>
+      </nav>
+    </header>
+    <section style="background:#faf9f7; color:#1b1916; padding:60px 48px 76px;">
+      <div style="display:grid; grid-template-columns:1.55fr 0.9fr; gap:48px; align-items:center;">
+        <div>
+          <p style="margin:0 0 22px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#1f7d73;">Product Design Leader · AI-UX</p>
+          <h1 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:58px; line-height:1.04; letter-spacing:-0.02em; color:#0b3a36; max-width:16ch;">I make complex things clear with words, systems, and <span style="color:#1f7d73; font-style:italic; background:linear-gradient(transparent 68%,#f1e0af 68%);">AI strategy</span>.</h1>
+          <p style="margin:28px 0 0; font-size:18px; line-height:1.6; color:#5c564e; max-width:52ch;">Two decades leading UX research, design teams, and product strategy — now helping teams ship AI experiences people actually trust.</p>
+          <div style="display:flex; gap:14px; margin-top:36px;">
+            <a href="/work" style="display:inline-flex; align-items:center; gap:8px; padding:14px 26px; background:#1f7d73; color:#fff; font-weight:600; font-size:15px; border-radius:999px;">Explore the work →</a>
+            <a href="/about" style="display:inline-flex; align-items:center; padding:14px 26px; border:1.5px solid #cfcac0; color:#1b1916; font-weight:600; font-size:15px; border-radius:999px;">About me</a>
+          </div>
+        </div>
+        <div style="justify-self:center;">
+          <div style="width:240px; height:240px; border-radius:50%; background:linear-gradient(140deg,#1f7d73,#0b3a36); display:flex; align-items:center; justify-content:center; box-shadow:0 24px 60px rgb(11 58 54 / 0.35); position:relative;">
+            <span style="font-family:'Fraunces',serif; font-size:84px; font-weight:600; color:#e3f1ef;">DG</span>
+            <span style="position:absolute; bottom:-8px; right:-8px; width:56px; height:56px; border-radius:50%; background:#e3c87e;"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="background:#0b3a36; color:#e3f1ef; padding:56px 48px;">
+      <div style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:48px; align-items:start;">
+        <div>
+          <p style="margin:0 0 16px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#e3c87e;">AI-UX, with intention</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:34px; line-height:1.12; color:#fff;">Start with why. Then earn trust.</h2>
+          <p style="margin:20px 0 0; font-size:16px; line-height:1.65; color:#bfdedb;">A deliberate process that puts human agency first — clarifying goals, choosing the right AI moments, and designing for transparency and safety.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:14px;">
+          <div style="background:rgb(255 255 255 / 0.06); border:1px solid rgb(255 255 255 / 0.12); border-radius:12px; padding:20px;"><span style="font-family:'Fraunces',serif; font-size:20px; color:#e3c87e;">01</span><p style="margin:8px 0 0; font-weight:600; font-size:15px; color:#fff;">Purpose first</p></div>
+          <div style="background:rgb(255 255 255 / 0.06); border:1px solid rgb(255 255 255 / 0.12); border-radius:12px; padding:20px;"><span style="font-family:'Fraunces',serif; font-size:20px; color:#e3c87e;">02</span><p style="margin:8px 0 0; font-weight:600; font-size:15px; color:#fff;">Human agency</p></div>
+          <div style="background:rgb(255 255 255 / 0.06); border:1px solid rgb(255 255 255 / 0.12); border-radius:12px; padding:20px;"><span style="font-family:'Fraunces',serif; font-size:20px; color:#e3c87e;">03</span><p style="margin:8px 0 0; font-weight:600; font-size:15px; color:#fff;">Transparency</p></div>
+          <div style="background:rgb(255 255 255 / 0.06); border:1px solid rgb(255 255 255 / 0.12); border-radius:12px; padding:20px;"><span style="font-family:'Fraunces',serif; font-size:20px; color:#e3c87e;">04</span><p style="margin:8px 0 0; font-weight:600; font-size:15px; color:#fff;">Ship &amp; evolve</p></div>
+        </div>
+      </div>
+    </section>
+    <section style="padding:60px 48px; background:#faf9f7;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:36px;">
+        <div>
+          <p style="margin:0 0 10px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#1f7d73;">Selected work</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:36px; line-height:1.08; color:#1b1916;">Case studies across AI, health, and brand</h2>
+        </div>
+        <a href="/work" style="font-weight:600; font-size:15px; color:#1f7d73; white-space:nowrap;">All work →</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <a href="/work/lotic" style="display:grid; grid-template-columns:300px 1fr auto; gap:32px; align-items:center; background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:22px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#e3f1ef,#85c0ba); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:52px; font-weight:600; color:#0f4f49;">L</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#14655d;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#1f7d73;">Lotic · AI product</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:24px; line-height:1.15; color:#1b1916;">From concept to market in 90 days</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#5c564e; max-width:58ch;">Launching an AI-powered well-being insights platform under aggressive timelines.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">AI product strategy</span><span style="font-size:12px; font-weight:600; color:#7e2f1e; background:#faf3df; border-radius:999px; padding:5px 12px;">+27% prompt completion</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:38px; font-weight:500; color:#e3c87e;">01</span>
+        </a>
+        <a href="/work/vp" style="display:grid; grid-template-columns:300px 1fr auto; gap:32px; align-items:center; background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:22px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#e3f1ef,#bfdedb); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:52px; font-weight:600; color:#14655d;">V</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#1f7d73;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#1f7d73;">Virgin Pulse · Platform strategy</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:24px; line-height:1.15; color:#1b1916;">Modular, scalable platform strategy</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#5c564e; max-width:58ch;">Transforming a B2B2C wellness platform into a configurable health management solution.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">Design strategy</span><span style="font-size:12px; font-weight:600; color:#7e2f1e; background:#faf3df; border-radius:999px; padding:5px 12px;">200+ members researched</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:38px; font-weight:500; color:#e3c87e;">02</span>
+        </a>
+        <p style="margin:4px 0 0; font-size:14px; font-weight:500; color:#7d766c; text-align:center;">+ Loft.Design, Amazon Convergence &amp; Kindle Enterprise Publishing</p>
+      </div>
+    </section>
+    <section style="padding:70px 48px; background:#0b3a36; color:#e3f1ef; text-align:center;">
+      <h2 style="margin:0 auto; font-family:'Fraunces',serif; font-weight:600; font-size:36px; line-height:1.1; color:#fff; max-width:20ch;">See the thinking behind the work</h2>
+      <a href="/work" style="display:inline-flex; align-items:center; gap:8px; margin-top:28px; padding:15px 32px; background:#e3c87e; color:#1b1916; font-weight:600; font-size:16px; border-radius:999px;">Explore case studies →</a>
+    </section>
+  </div>
+  </div>
+
+  <!-- ============ 2c — SIGNAL TEAL (single electric teal accent) ============ -->
+  <div style="flex:0 0 auto; width:1100px;">
+  <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+    <span style="display:inline-flex; align-items:center; justify-content:center; height:30px; padding:0 12px; background:#1b1916; color:#faf9f7; font-size:13px; font-weight:600; letter-spacing:0.04em; border-radius:999px;">2c</span>
+    <span style="font-size:13px; font-weight:600; color:#5c564e; letter-spacing:0.02em;">Signal teal · one electric accent, high contrast</span>
+  </div>
+  <div id="2c" data-screen-label="Palette 2c" style="position:relative; width:1100px; background:#ffffff; box-shadow:0 30px 80px rgb(27 25 22 / 0.18); border-radius:6px; overflow:hidden;">
+    <header style="display:flex; align-items:center; justify-content:space-between; padding:20px 48px; background:#ffffff; border-bottom:1px solid #e5e2db;">
+      <span style="font-family:'Fraunces',serif; font-size:19px; font-weight:700; color:#111009;">Deanna Glaze</span>
+      <nav style="display:flex; gap:28px;">
+        <a href="/" style="color:#111009; font-size:14px; font-weight:500; border-bottom:2px solid #1f7d73; padding-bottom:3px;">Home</a>
+        <a href="/work" style="color:#5c564e; font-size:14px; font-weight:500;">Work</a>
+        <a href="/about" style="color:#5c564e; font-size:14px; font-weight:500;">About</a>
+        <a href="/designresources" style="color:#5c564e; font-size:14px; font-weight:500;">Design Resources</a>
+      </nav>
+    </header>
+    <section style="background:#ffffff; color:#111009; padding:64px 48px 72px;">
+      <div style="display:grid; grid-template-columns:1.55fr 0.9fr; gap:48px; align-items:center;">
+        <div>
+          <p style="margin:0 0 22px; display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#0f4f49;"><span style="width:8px; height:8px; border-radius:50%; background:#1f7d73; display:inline-block;"></span>Product Design Leader · AI-UX</p>
+          <h1 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:58px; line-height:1.04; letter-spacing:-0.02em; color:#111009; max-width:16ch;">I make complex things clear with words, systems, and <span style="color:#1f7d73; font-style:italic;">AI strategy</span>.</h1>
+          <p style="margin:28px 0 0; font-size:18px; line-height:1.6; color:#5c564e; max-width:52ch;">Two decades leading UX research, design teams, and product strategy — now helping teams ship AI experiences people actually trust.</p>
+          <div style="display:flex; gap:14px; margin-top:36px;">
+            <a href="/work" style="display:inline-flex; align-items:center; gap:8px; padding:14px 26px; background:#1f7d73; color:#fff; font-weight:600; font-size:15px; border-radius:999px;">Explore the work →</a>
+            <a href="/about" style="display:inline-flex; align-items:center; padding:14px 26px; border:1.5px solid #cfcac0; color:#111009; font-weight:600; font-size:15px; border-radius:999px;">About me</a>
+          </div>
+        </div>
+        <div style="justify-self:center;">
+          <div style="width:240px; height:240px; border-radius:50%; background:#f3f1ed; border:2px solid #1f7d73; display:flex; align-items:center; justify-content:center;">
+            <span style="font-family:'Fraunces',serif; font-size:84px; font-weight:600; color:#1f7d73;">DG</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="background:#111009; color:#e3f1ef; padding:56px 48px;">
+      <div style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:48px; align-items:start;">
+        <div>
+          <p style="margin:0 0 16px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#4a9d94;">AI-UX, with intention</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:34px; line-height:1.12; color:#fff;">Start with why. Then earn <span style="color:#4a9d94;">trust.</span></h2>
+          <p style="margin:20px 0 0; font-size:16px; line-height:1.65; color:#a8a196;">A deliberate process that puts human agency first — clarifying goals, choosing the right AI moments, and designing for transparency and safety.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:14px;">
+          <div style="background:#1b1916; border:1px solid #423d37; border-radius:12px; padding:20px;"><span style="font-family:'Fraunces',serif; font-size:20px; color:#4a9d94;">01</span><p style="margin:8px 0 0; font-weight:600; font-size:15px; color:#fff;">Purpose first</p></div>
+          <div style="background:#1b1916; border:1px solid #423d37; border-radius:12px; padding:20px;"><span style="font-family:'Fraunces',serif; font-size:20px; color:#4a9d94;">02</span><p style="margin:8px 0 0; font-weight:600; font-size:15px; color:#fff;">Human agency</p></div>
+          <div style="background:#1b1916; border:1px solid #423d37; border-radius:12px; padding:20px;"><span style="font-family:'Fraunces',serif; font-size:20px; color:#4a9d94;">03</span><p style="margin:8px 0 0; font-weight:600; font-size:15px; color:#fff;">Transparency</p></div>
+          <div style="background:#1b1916; border:1px solid #423d37; border-radius:12px; padding:20px;"><span style="font-family:'Fraunces',serif; font-size:20px; color:#4a9d94;">04</span><p style="margin:8px 0 0; font-weight:600; font-size:15px; color:#fff;">Ship &amp; evolve</p></div>
+        </div>
+      </div>
+    </section>
+    <section style="padding:60px 48px; background:#ffffff;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:36px;">
+        <div>
+          <p style="margin:0 0 10px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#0f4f49;">Selected work</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:36px; line-height:1.08; color:#111009;">Case studies across AI, health, and brand</h2>
+        </div>
+        <a href="/work" style="font-weight:600; font-size:15px; color:#1f7d73; white-space:nowrap;">All work →</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <a href="/work/lotic" style="display:grid; grid-template-columns:300px 1fr auto; gap:32px; align-items:center; background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:22px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:#0f4f49; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:52px; font-weight:600; color:#85c0ba;">L</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#4a9d94;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#1f7d73;">Lotic · AI product</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:24px; line-height:1.15; color:#111009;">From concept to market in 90 days</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#5c564e; max-width:58ch;">Launching an AI-powered well-being insights platform under aggressive timelines.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">AI product strategy</span><span style="font-size:12px; font-weight:600; color:#0f4f49; background:#e3f1ef; border-radius:999px; padding:5px 12px;">+27% prompt completion</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:38px; font-weight:500; color:#cfcac0;">01</span>
+        </a>
+        <a href="/work/vp" style="display:grid; grid-template-columns:300px 1fr auto; gap:32px; align-items:center; background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:22px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:#1b1916; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;"><span style="font-family:'Fraunces',serif; font-size:52px; font-weight:600; color:#4a9d94;">V</span><span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#4a9d94;">Preview</span></div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#1f7d73;">Virgin Pulse · Platform strategy</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:24px; line-height:1.15; color:#111009;">Modular, scalable platform strategy</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#5c564e; max-width:58ch;">Transforming a B2B2C wellness platform into a configurable health management solution.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;"><span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">Design strategy</span><span style="font-size:12px; font-weight:600; color:#0f4f49; background:#e3f1ef; border-radius:999px; padding:5px 12px;">200+ members researched</span></div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:38px; font-weight:500; color:#cfcac0;">02</span>
+        </a>
+        <p style="margin:4px 0 0; font-size:14px; font-weight:500; color:#7d766c; text-align:center;">+ Loft.Design, Amazon Convergence &amp; Kindle Enterprise Publishing</p>
+      </div>
+    </section>
+    <section style="padding:70px 48px; background:#111009; color:#e3f1ef; text-align:center;">
+      <h2 style="margin:0 auto; font-family:'Fraunces',serif; font-weight:600; font-size:36px; line-height:1.1; color:#fff; max-width:20ch;">See the thinking behind the work</h2>
+      <a href="/work" style="display:inline-flex; align-items:center; gap:8px; margin-top:28px; padding:15px 32px; background:#1f7d73; color:#fff; font-weight:600; font-size:16px; border-radius:999px;">Explore case studies →</a>
+    </section>
+  </div>
+  </div>
+
+</section>
+
+<section data-turn="1" style="display:flex; flex-wrap:wrap; gap:80px; padding:72px; align-items:flex-start; background:#e9e6df; min-height:100vh;">
+
+  <!-- ============ VERSION 1a — BOLD / EDITORIAL ============ -->
+  <div style="flex:0 0 auto; width:1280px;">
+  <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+    <span style="display:inline-flex; align-items:center; justify-content:center; height:30px; padding:0 12px; background:#1b1916; color:#faf9f7; font-size:13px; font-weight:600; letter-spacing:0.04em; border-radius:999px;">1a</span>
+    <span style="font-size:13px; font-weight:600; color:#5c564e; letter-spacing:0.02em;">Bold / editorial · work as showcase</span>
+  </div>
+  <div id="1a" data-screen-label="Version 1a" style="position:relative; width:1280px; background:#faf9f7; box-shadow:0 30px 80px rgb(27 25 22 / 0.18); border-radius:6px; overflow:hidden;">
+    <!-- Header -->
+    <header style="display:flex; align-items:center; justify-content:space-between; padding:22px 56px; background:#1b1916; color:#faf9f7;">
+      <a href="/" style="font-family:'Fraunces',serif; font-size:20px; font-weight:700; color:#faf9f7; letter-spacing:-0.01em;">Deanna Glaze</a>
+      <nav style="display:flex; gap:32px;">
+        <a href="/" style="color:#faf9f7; font-size:14px; font-weight:500; border-bottom:2px solid #e87456; padding-bottom:3px;">Home</a>
+        <a href="/work" style="color:#cfcac0; font-size:14px; font-weight:500;">Work</a>
+        <a href="/about" style="color:#cfcac0; font-size:14px; font-weight:500;">About</a>
+        <a href="/designresources" style="color:#cfcac0; font-size:14px; font-weight:500;">Design Resources</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section style="background:#1b1916; color:#faf9f7; padding:64px 56px 88px;">
+      <div style="display:grid; grid-template-columns:1.55fr 0.9fr; gap:56px; align-items:center;">
+        <div>
+          <p style="margin:0 0 24px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#e87456;">Product Design Leader · AI-UX</p>
+          <h1 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:66px; line-height:1.04; letter-spacing:-0.02em; max-width:16ch;">I make complex things clear with words, systems, and <span style="color:#e3c87e; font-style:italic;">AI strategy</span>.</h1>
+          <p style="margin:32px 0 0; font-size:19px; line-height:1.6; color:#cfcac0; max-width:52ch;">Two decades leading UX research, design teams, and product strategy — now helping teams ship AI experiences people actually trust.</p>
+          <div style="display:flex; gap:16px; margin-top:40px;">
+            <a href="/work" style="display:inline-flex; align-items:center; gap:8px; padding:15px 28px; background:#e87456; color:#1b1916; font-weight:600; font-size:15px; border-radius:999px;">Explore the work →</a>
+            <a href="/about" style="display:inline-flex; align-items:center; padding:15px 28px; border:1.5px solid #423d37; color:#faf9f7; font-weight:600; font-size:15px; border-radius:999px;">About me</a>
+          </div>
+        </div>
+        <div style="justify-self:center;">
+          <div style="width:280px; height:280px; border-radius:50%; background:linear-gradient(140deg,#14655d,#0b3a36); display:flex; align-items:center; justify-content:center; box-shadow:0 24px 60px rgb(0 0 0 / 0.45); border:1px solid #423d37;">
+            <span style="font-family:'Fraunces',serif; font-size:96px; font-weight:600; color:#e3f1ef;">DG</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI band -->
+    <section style="background:#0f4f49; color:#e3f1ef; padding:64px 56px;">
+      <div style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:start;">
+        <div>
+          <p style="margin:0 0 18px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#85c0ba;">AI-UX, with intention</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:38px; line-height:1.12; letter-spacing:-0.01em; color:#faf9f7;">Start with why. Then earn trust.</h2>
+          <p style="margin:24px 0 0; font-size:17px; line-height:1.65; color:#bfdedb;">I guide teams through a deliberate process that puts human agency first — clarifying goals, picking the right AI moments, and designing for transparency and safety. Then we ship, watch how it behaves in the wild, and keep evolving.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:16px;">
+          <div style="background:rgb(255 255 255 / 0.06); border:1px solid rgb(255 255 255 / 0.12); border-radius:12px; padding:22px;">
+            <span style="font-family:'Fraunces',serif; font-size:22px; color:#e3c87e;">01</span>
+            <p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#faf9f7;">Purpose first</p>
+            <p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#85c0ba;">Real use cases and risks before a single interface.</p>
+          </div>
+          <div style="background:rgb(255 255 255 / 0.06); border:1px solid rgb(255 255 255 / 0.12); border-radius:12px; padding:22px;">
+            <span style="font-family:'Fraunces',serif; font-size:22px; color:#e3c87e;">02</span>
+            <p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#faf9f7;">Human agency</p>
+            <p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#85c0ba;">People stay in control; AI assists, never overrides.</p>
+          </div>
+          <div style="background:rgb(255 255 255 / 0.06); border:1px solid rgb(255 255 255 / 0.12); border-radius:12px; padding:22px;">
+            <span style="font-family:'Fraunces',serif; font-size:22px; color:#e3c87e;">03</span>
+            <p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#faf9f7;">Transparency</p>
+            <p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#85c0ba;">Privacy, consent, and accessibility as table stakes.</p>
+          </div>
+          <div style="background:rgb(255 255 255 / 0.06); border:1px solid rgb(255 255 255 / 0.12); border-radius:12px; padding:22px;">
+            <span style="font-family:'Fraunces',serif; font-size:22px; color:#e3c87e;">04</span>
+            <p style="margin:10px 0 0; font-weight:600; font-size:16px; color:#faf9f7;">Ship &amp; evolve</p>
+            <p style="margin:6px 0 0; font-size:14px; line-height:1.55; color:#85c0ba;">Observe behavior in the wild; review, learn, refine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work showcase (list) -->
+    <section style="padding:72px 56px; background:#faf9f7;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:44px;">
+        <div>
+          <p style="margin:0 0 12px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#14655d;">Selected work</p>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:42px; line-height:1.08; letter-spacing:-0.015em; color:#1b1916;">Case studies across AI, health, and brand</h2>
+        </div>
+        <a href="/work" style="font-weight:600; font-size:15px; color:#14655d; white-space:nowrap;">All work →</a>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <!-- Row: Lotic -->
+        <a href="/work/lotic" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#e3f1ef,#bfdedb); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+            <span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#14655d;">L</span>
+            <span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#4a9d94;">Preview</span>
+          </div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#14655d;">Lotic · AI product</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#1b1916;">From concept to market in 90 days</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#5c564e; max-width:60ch;">Launching an AI-powered well-being insights platform under aggressive timelines and minimal upfront discovery.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;">
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">AI product strategy</span>
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">Conversational UI</span>
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">+27% prompt completion</span>
+            </div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#cfcac0;">01</span>
+        </a>
+
+        <!-- Row: Virgin Pulse -->
+        <a href="/work/vp" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#fdeae4,#f9cabc); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+            <span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#a83f27;">V</span>
+            <span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#d05336;">Preview</span>
+          </div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#a83f27;">Virgin Pulse · Platform strategy</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#1b1916;">Modular, scalable platform strategy</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#5c564e; max-width:60ch;">Transforming a B2B2C wellness platform into a comprehensive, configurable health management solution.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;">
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">Design strategy</span>
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">Service blueprint</span>
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">200+ members researched</span>
+            </div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#cfcac0;">02</span>
+        </a>
+
+        <!-- Row: Loft -->
+        <a href="/work/loft" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#faf3df,#f1e0af); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+            <span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#b18a2e;">L</span>
+            <span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#cfa84e;">Preview</span>
+          </div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#b18a2e;">Loft.Design · Brand &amp; story</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#1b1916;">Rebranding through user-centered storytelling</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#5c564e; max-width:60ch;">A comprehensive rebrand: a redesigned marketing site and a new agency reel that communicate value and creative impact.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;">
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">Content strategy</span>
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">Creative direction</span>
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">Facilitation</span>
+            </div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#cfcac0;">03</span>
+        </a>
+
+        <!-- Row: Amazon Convergence -->
+        <a href="/work/amazon-convergence" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#e3f1ef,#85c0ba); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+            <span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#0f4f49;">A</span>
+            <span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#14655d;">Preview</span>
+          </div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#0f4f49;">Amazon · Systems</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#1b1916;">Books: Convergence Project</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#5c564e; max-width:60ch;">Unifying the books experience across Amazon with systems thinking that scales across feature teams.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;">
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">UX design</span>
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">Systems thinking</span>
+            </div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#cfcac0;">04</span>
+        </a>
+
+        <!-- Row: Amazon Kindle -->
+        <a href="/work/amazon" style="display:grid; grid-template-columns:340px 1fr auto; gap:36px; align-items:center; background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:24px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; border-radius:10px; background:linear-gradient(135deg,#fdeae4,#f29e86); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+            <span style="font-family:'Fraunces',serif; font-size:56px; font-weight:600; color:#7e2f1e;">A</span>
+            <span style="font-family:monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#a83f27;">Preview</span>
+          </div>
+          <div>
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#a83f27;">Amazon · Enterprise UX</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:25px; line-height:1.15; color:#1b1916;">Kindle Enterprise Publishing</h3>
+            <p style="margin:10px 0 0; font-size:15px; line-height:1.55; color:#5c564e; max-width:60ch;">Streamlining fragmented workflows so publishers can manage every title format from one clear dashboard.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;">
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">Design sprints</span>
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">User research</span>
+              <span style="font-size:12px; font-weight:500; color:#5c564e; background:#f3f1ed; border-radius:999px; padding:5px 12px;">Prototyping</span>
+            </div>
+          </div>
+          <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:500; color:#cfcac0;">05</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Values condensed -->
+    <section style="padding:64px 56px; background:#f3f1ed; border-top:1px solid #e5e2db;">
+      <p style="margin:0 0 24px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#14655d;">How I work</p>
+      <p style="margin:0; font-family:'Fraunces',serif; font-weight:500; font-size:30px; line-height:1.35; letter-spacing:-0.01em; color:#1b1916; max-width:34ch;">Inclusive by default. Evidence-led. Systems that do the heavy lifting. And AI designed with intention.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:36px; margin-top:32px;">
+        <span style="font-size:15px; font-weight:600; color:#5c564e; border-left:2px solid #e87456; padding-left:14px;">Clarity &amp; shared ownership</span>
+        <span style="font-size:15px; font-weight:600; color:#5c564e; border-left:2px solid #e87456; padding-left:14px;">Evidence-led strategy</span>
+        <span style="font-size:15px; font-weight:600; color:#5c564e; border-left:2px solid #e87456; padding-left:14px;">Systems-level impact</span>
+        <span style="font-size:15px; font-weight:600; color:#5c564e; border-left:2px solid #e87456; padding-left:14px;">AI with intention</span>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding:80px 56px; background:#1b1916; color:#faf9f7; text-align:center;">
+      <h2 style="margin:0 auto; font-family:'Fraunces',serif; font-weight:600; font-size:40px; line-height:1.1; letter-spacing:-0.01em; max-width:20ch;">See the thinking behind the work</h2>
+      <p style="margin:18px auto 0; font-size:17px; line-height:1.6; color:#cfcac0; max-width:46ch;">Dive into the full case studies — the research, the trade-offs, and the outcomes.</p>
+      <a href="/work" style="display:inline-flex; align-items:center; gap:8px; margin-top:34px; padding:16px 34px; background:#e87456; color:#1b1916; font-weight:600; font-size:16px; border-radius:999px;">Explore case studies →</a>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background:#111009; color:#faf9f7; padding:44px 56px; display:flex; align-items:center; justify-content:space-between;">
+      <div>
+        <p style="margin:0; font-family:'Fraunces',serif; font-weight:700; font-size:17px;">Deanna Glaze</p>
+        <p style="margin:6px 0 0; font-size:13px; color:#a8a196; max-width:36ch;">Making complex things clear with words, systems, and AI strategy.</p>
+      </div>
+      <div style="display:flex; gap:24px;">
+        <a href="https://www.linkedin.com/in/deannaglaze" style="color:#a8a196; font-size:13px;">LinkedIn</a>
+        <a href="https://www.instagram.com/monkeyshineme/" style="color:#a8a196; font-size:13px;">Instagram</a>
+      </div>
+    </footer>
+  </div>
+  </div>
+
+  <!-- ============ VERSION 1b — CALM / MINIMAL ============ -->
+  <div style="flex:0 0 auto; width:1280px;">
+  <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+    <span style="display:inline-flex; align-items:center; justify-content:center; height:30px; padding:0 12px; background:#1b1916; color:#faf9f7; font-size:13px; font-weight:600; letter-spacing:0.04em; border-radius:999px;">1b</span>
+    <span style="font-size:13px; font-weight:600; color:#5c564e; letter-spacing:0.02em;">Calm / minimal · work as grid</span>
+  </div>
+  <div id="1b" data-screen-label="Version 1b" style="position:relative; width:1280px; background:#faf9f7; box-shadow:0 30px 80px rgb(27 25 22 / 0.18); border-radius:6px; overflow:hidden;">
+    <!-- Header -->
+    <header style="display:flex; align-items:center; justify-content:space-between; padding:22px 64px; background:color-mix(in srgb,#faf9f7 88%,transparent); border-bottom:1px solid #e5e2db;">
+      <a href="/" style="font-family:'Fraunces',serif; font-size:20px; font-weight:700; color:#1b1916; letter-spacing:-0.01em;">Deanna Glaze</a>
+      <nav style="display:flex; gap:32px;">
+        <a href="/" style="color:#1b1916; font-size:14px; font-weight:500; border-bottom:2px solid #14655d; padding-bottom:3px;">Home</a>
+        <a href="/work" style="color:#5c564e; font-size:14px; font-weight:500;">Work</a>
+        <a href="/about" style="color:#5c564e; font-size:14px; font-weight:500;">About</a>
+        <a href="/designresources" style="color:#5c564e; font-size:14px; font-weight:500;">Design Resources</a>
+      </nav>
+    </header>
+
+    <!-- Hero (centered, airy) -->
+    <section style="padding:104px 64px 88px; text-align:center; background:#faf9f7;">
+      <div style="width:96px; height:96px; margin:0 auto 32px; border-radius:50%; background:linear-gradient(140deg,#e3f1ef,#bfdedb); display:flex; align-items:center; justify-content:center; border:1px solid #e5e2db;">
+        <span style="font-family:'Fraunces',serif; font-size:34px; font-weight:600; color:#14655d;">DG</span>
+      </div>
+      <p style="margin:0 0 22px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#14655d;">Product Design Leader · UX &amp; AI</p>
+      <h1 style="margin:0 auto; font-family:'Fraunces',serif; font-weight:600; font-size:60px; line-height:1.08; letter-spacing:-0.02em; color:#1b1916; max-width:20ch;">I make complex things clear with words, systems, and AI strategy.</h1>
+      <p style="margin:30px auto 0; font-size:19px; line-height:1.65; color:#5c564e; max-width:56ch;">Two decades leading UX research, design teams, and product strategy — with a steady focus on AI experiences that stay clear, humane, and trustworthy.</p>
+      <div style="display:flex; gap:16px; justify-content:center; margin-top:40px;">
+        <a href="/work" style="display:inline-flex; align-items:center; gap:8px; padding:15px 30px; background:#14655d; color:#fff; font-weight:600; font-size:15px; border-radius:999px;">See my work →</a>
+        <a href="/about" style="display:inline-flex; align-items:center; padding:15px 30px; border:1.5px solid #cfcac0; color:#1b1916; font-weight:600; font-size:15px; border-radius:999px;">About me</a>
+      </div>
+    </section>
+
+    <!-- Values as four cards -->
+    <section style="padding:16px 64px 72px; background:#faf9f7;">
+      <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:24px;">
+        <article style="background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:32px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:23px; color:#1b1916;">Clarity, trust &amp; shared ownership</h3>
+          <div style="width:40px; height:3px; background:#14655d; border-radius:999px; margin:14px 0 18px;"></div>
+          <p style="margin:0; font-size:15px; line-height:1.6; color:#5c564e;">Inclusive by default. We write things down, invite quieter voices early, and rotate facilitation. Context is shared, ownership is clear.</p>
+        </article>
+        <article style="background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:32px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:23px; color:#1b1916;">Evidence-led product strategy</h3>
+          <div style="width:40px; height:3px; background:#14655d; border-radius:999px; margin:14px 0 18px;"></div>
+          <p style="margin:0; font-size:15px; line-height:1.6; color:#5c564e;">I start with people and outcomes. Research frames the problem and shapes measurable goals, then shows up in what actually ships.</p>
+        </article>
+        <article style="background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:32px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:23px; color:#1b1916;">Systems-level impact</h3>
+          <div style="width:40px; height:3px; background:#14655d; border-radius:999px; margin:14px 0 18px;"></div>
+          <p style="margin:0; font-size:15px; line-height:1.6; color:#5c564e;">I apply systems thinking to patterns, naming, and guidance that scale across products. Fewer one-offs, fewer debates — the system does the heavy lifting.</p>
+        </article>
+        <article style="background:#fff; border:1px solid #e5e2db; border-radius:16px; padding:32px; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:23px; color:#1b1916;">AI with intention</h3>
+          <div style="width:40px; height:3px; background:#d05336; border-radius:999px; margin:14px 0 18px;"></div>
+          <p style="margin:0; font-size:15px; line-height:1.6; color:#5c564e;">Start with real use cases and risks. Design for usefulness, respect, and transparency. Then keep a steady loop: review, learn, evolve.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- AI balanced section -->
+    <section style="padding:72px 64px; background:#0f4f49; color:#e3f1ef;">
+      <div style="max-width:60ch; margin:0 auto; text-align:center;">
+        <p style="margin:0 0 18px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#85c0ba;">Experience design in an AI world</p>
+        <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:36px; line-height:1.15; letter-spacing:-0.01em; color:#faf9f7;">Start with why, then earn trust.</h2>
+        <p style="margin:22px 0 0; font-size:17px; line-height:1.65; color:#bfdedb;">A deliberate process that puts human agency first: clarify goals, choose the right AI moments, design for transparency and safety — then ship, observe, and evolve.</p>
+      </div>
+      <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin-top:36px;">
+        <span style="font-size:14px; font-weight:600; color:#faf9f7; background:rgb(255 255 255 / 0.08); border:1px solid rgb(255 255 255 / 0.14); border-radius:999px; padding:9px 18px;">Purpose first</span>
+        <span style="font-size:14px; font-weight:600; color:#faf9f7; background:rgb(255 255 255 / 0.08); border:1px solid rgb(255 255 255 / 0.14); border-radius:999px; padding:9px 18px;">Human agency</span>
+        <span style="font-size:14px; font-weight:600; color:#faf9f7; background:rgb(255 255 255 / 0.08); border:1px solid rgb(255 255 255 / 0.14); border-radius:999px; padding:9px 18px;">Transparency &amp; safety</span>
+        <span style="font-size:14px; font-weight:600; color:#faf9f7; background:rgb(255 255 255 / 0.08); border:1px solid rgb(255 255 255 / 0.14); border-radius:999px; padding:9px 18px;">Ship &amp; evolve</span>
+      </div>
+    </section>
+
+    <!-- Work grid -->
+    <section style="padding:80px 64px; background:#faf9f7;">
+      <div style="text-align:center; margin-bottom:48px;">
+        <p style="margin:0 0 12px; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#14655d;">Selected work</p>
+        <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:40px; line-height:1.1; letter-spacing:-0.015em; color:#1b1916;">Case studies across AI, health &amp; brand</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:28px;">
+        <!-- Lotic -->
+        <a href="/work/lotic" style="display:block; background:#fff; border:1px solid #e5e2db; border-radius:16px; overflow:hidden; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; background:linear-gradient(135deg,#e3f1ef,#85c0ba); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;">
+            <span style="font-family:'Fraunces',serif; font-size:64px; font-weight:600; color:#14655d;">L</span>
+            <span style="font-family:monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#0f4f49;">Preview</span>
+          </div>
+          <div style="padding:26px 26px 30px;">
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#14655d;">Lotic · AI product</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:23px; line-height:1.18; color:#1b1916;">From concept to market in 90 days</h3>
+            <p style="margin:10px 0 0; font-size:14px; line-height:1.55; color:#5c564e;">An AI-powered well-being insights platform launched under aggressive timelines.</p>
+            <span style="display:inline-block; margin-top:16px; font-size:14px; font-weight:600; color:#14655d;">Read case study →</span>
+          </div>
+        </a>
+        <!-- Virgin Pulse -->
+        <a href="/work/vp" style="display:block; background:#fff; border:1px solid #e5e2db; border-radius:16px; overflow:hidden; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; background:linear-gradient(135deg,#fdeae4,#f9cabc); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;">
+            <span style="font-family:'Fraunces',serif; font-size:64px; font-weight:600; color:#a83f27;">V</span>
+            <span style="font-family:monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#d05336;">Preview</span>
+          </div>
+          <div style="padding:26px 26px 30px;">
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#a83f27;">Virgin Pulse · Strategy</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:23px; line-height:1.18; color:#1b1916;">Modular, scalable platform strategy</h3>
+            <p style="margin:10px 0 0; font-size:14px; line-height:1.55; color:#5c564e;">A configurable, cohesive front door for a B2B2C wellness platform.</p>
+            <span style="display:inline-block; margin-top:16px; font-size:14px; font-weight:600; color:#14655d;">Read case study →</span>
+          </div>
+        </a>
+        <!-- Loft -->
+        <a href="/work/loft" style="display:block; background:#fff; border:1px solid #e5e2db; border-radius:16px; overflow:hidden; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; background:linear-gradient(135deg,#faf3df,#f1e0af); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;">
+            <span style="font-family:'Fraunces',serif; font-size:64px; font-weight:600; color:#b18a2e;">L</span>
+            <span style="font-family:monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#cfa84e;">Preview</span>
+          </div>
+          <div style="padding:26px 26px 30px;">
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#b18a2e;">Loft.Design · Brand</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:23px; line-height:1.18; color:#1b1916;">Rebranding through storytelling</h3>
+            <p style="margin:10px 0 0; font-size:14px; line-height:1.55; color:#5c564e;">A redesigned marketing site and agency reel that communicate creative impact.</p>
+            <span style="display:inline-block; margin-top:16px; font-size:14px; font-weight:600; color:#14655d;">Read case study →</span>
+          </div>
+        </a>
+        <!-- Amazon Convergence -->
+        <a href="/work/amazon-convergence" style="display:block; background:#fff; border:1px solid #e5e2db; border-radius:16px; overflow:hidden; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:8/5; background:linear-gradient(135deg,#e3f1ef,#bfdedb); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;">
+            <span style="font-family:'Fraunces',serif; font-size:64px; font-weight:600; color:#0f4f49;">A</span>
+            <span style="font-family:monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#14655d;">Preview</span>
+          </div>
+          <div style="padding:26px 26px 30px;">
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#0f4f49;">Amazon · Systems</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:23px; line-height:1.18; color:#1b1916;">Books: Convergence Project</h3>
+            <p style="margin:10px 0 0; font-size:14px; line-height:1.55; color:#5c564e;">Unifying the books experience across Amazon with systems that scale.</p>
+            <span style="display:inline-block; margin-top:16px; font-size:14px; font-weight:600; color:#14655d;">Read case study →</span>
+          </div>
+        </a>
+        <!-- Amazon Kindle (full width) -->
+        <a href="/work/amazon" style="display:grid; grid-template-columns:1fr 1fr; grid-column:1 / -1; background:#fff; border:1px solid #e5e2db; border-radius:16px; overflow:hidden; box-shadow:0 1px 2px rgb(27 25 22 / 0.06);">
+          <div style="aspect-ratio:16/9; background:linear-gradient(135deg,#fdeae4,#f29e86); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;">
+            <span style="font-family:'Fraunces',serif; font-size:64px; font-weight:600; color:#7e2f1e;">A</span>
+            <span style="font-family:monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#a83f27;">Preview</span>
+          </div>
+          <div style="padding:36px 40px; display:flex; flex-direction:column; justify-content:center;">
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#a83f27;">Amazon · Enterprise UX</p>
+            <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:27px; line-height:1.15; color:#1b1916;">Kindle Enterprise Publishing</h3>
+            <p style="margin:12px 0 0; font-size:15px; line-height:1.6; color:#5c564e; max-width:48ch;">Streamlining fragmented workflows so publishers can manage every title format — print, digital, and audio — from one clear dashboard.</p>
+            <span style="display:inline-block; margin-top:18px; font-size:14px; font-weight:600; color:#14655d;">Read case study →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding:88px 64px; background:#f3f1ed; text-align:center; border-top:1px solid #e5e2db;">
+      <h2 style="margin:0 auto; font-family:'Fraunces',serif; font-weight:600; font-size:38px; line-height:1.12; letter-spacing:-0.01em; color:#1b1916; max-width:22ch;">See the thinking behind the work</h2>
+      <p style="margin:18px auto 0; font-size:17px; line-height:1.6; color:#5c564e; max-width:46ch;">Explore the full case studies — the research, the trade-offs, and the outcomes.</p>
+      <a href="/work" style="display:inline-flex; align-items:center; gap:8px; margin-top:32px; padding:16px 34px; background:#14655d; color:#fff; font-weight:600; font-size:16px; border-radius:999px;">Explore case studies →</a>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background:#1b1916; color:#faf9f7; padding:44px 64px; display:flex; align-items:center; justify-content:space-between;">
+      <div>
+        <p style="margin:0; font-family:'Fraunces',serif; font-weight:700; font-size:17px;">Deanna Glaze</p>
+        <p style="margin:6px 0 0; font-size:13px; color:#a8a196; max-width:36ch;">Making complex things clear with words, systems, and AI strategy.</p>
+      </div>
+      <div style="display:flex; gap:24px;">
+        <a href="https://www.linkedin.com/in/deannaglaze" style="color:#a8a196; font-size:13px;">LinkedIn</a>
+        <a href="https://www.instagram.com/monkeyshineme/" style="color:#a8a196; font-size:13px;">Instagram</a>
+      </div>
+    </footer>
+  </div>
+  </div>
+
+</section>
+</x-dc>
+</body>
+</html>

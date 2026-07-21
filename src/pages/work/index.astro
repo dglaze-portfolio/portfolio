@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WorkCard from '../../components/WorkCard.astro';
+import CtaSection from '../../components/CtaSection.astro';
+
+const projects = (await getCollection('work', ({ data }) => !data.draft)).sort(
+  (a, b) => a.data.order - b.data.order
+);
+---
+
+<BaseLayout
+  title="Work"
+  description="Selected case studies: AI product innovation, platform strategy, publishing tools, and brand storytelling."
+>
+  <section class="section--tight">
+    <div class="container">
+      <h1>Work</h1>
+      <p class="work-intro">
+        Selected case studies across AI, digital health, publishing, and brand.
+      </p>
+
+      <div class="work-grid">
+        {
+          projects.map((project) => (
+            <WorkCard
+              href={`/work/${project.id}`}
+              title={project.data.title}
+              tagline={project.data.tagline}
+              client={project.data.client}
+              cover={project.data.cover}
+              coverAlt={project.data.coverAlt}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CtaSection />
+</BaseLayout>
+
+<style>
+  .work-intro {
+    margin-block-start: var(--space-4);
+    font-size: var(--text-md);
+    color: var(--color-text-secondary);
+    max-width: 48ch;
+  }
+
+  .work-grid {
+    margin-block-start: var(--space-7);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+    gap: var(--space-6);
+  }
+</style>

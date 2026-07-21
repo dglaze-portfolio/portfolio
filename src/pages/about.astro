@@ -1,0 +1,155 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaSection from '../components/CtaSection.astro';
+
+/**
+ * Photo gallery. Drop images into /public/images/about/ and update paths.
+ * Captions migrated verbatim from the Squarespace site.
+ */
+const gallery = [
+  { src: '/images/about/gallery-01.jpg', caption: 'What the hell kind of bird is this?' },
+  { src: '/images/about/gallery-02.jpg', caption: 'Cerulean Sunday' },
+  {
+    src: '/images/about/gallery-03.jpg',
+    caption:
+      'It is good to have an end to journey toward, but it is the journey that matters in the end. — Ursula K. Le Guin',
+  },
+  {
+    src: '/images/about/gallery-04.jpg',
+    caption: 'My little basket of adorables. #ratterriersofinstagram',
+  },
+  { src: '/images/about/gallery-05.jpg', caption: 'Thank god for a beautiful sunset. #sunsetporn' },
+  { src: '/images/about/gallery-06.jpg', caption: 'It looks like these trees are gossiping.' },
+  {
+    src: '/images/about/gallery-07.jpg',
+    caption:
+      'Instructions for living a life. Pay attention. Be astonished. Tell about it. — Mary Oliver',
+  },
+  {
+    src: '/images/about/gallery-08.jpg',
+    caption:
+      '2021 Terrierist has her toolbox and N95 mask and is ready to get to work. Happy New Year, everyone!! 🎊',
+  },
+  { src: '/images/about/gallery-09.jpg', caption: 'Sunset porn' },
+  { src: '/images/about/gallery-10.jpg', caption: 'More #sunset porn' },
+  {
+    src: '/images/about/gallery-11.jpg',
+    caption: 'Everything outside feels so uncertain but inside this room I am at peace.',
+  },
+  { src: '/images/about/gallery-12.jpg', caption: 'Delicious, if subtle, RI sunset' },
+];
+---
+
+<BaseLayout
+  title="About"
+  description="Deanna Glaze — product designer and player-coach working across AI, publishing, and digital health."
+>
+  <section class="section--tight">
+    <div class="container about">
+      <div class="about__portrait">
+        <img
+          src="/images/about/portrait.jpg"
+          alt="Portrait of Deanna Glaze"
+          width="480"
+          height="600"
+          loading="eager"
+        />
+      </div>
+      <div class="about__copy prose">
+        <h1>About me</h1>
+        <p>
+          Hi. I'm Deanna, a product designer and a player-coach. I like complex
+          problems, continuous research, and writing the content that makes a
+          flow make sense. I've worked across AI, publishing, and digital
+          health at places like Amazon, Audible, and Virgin Pulse, as well as
+          scrappy startups.
+        </p>
+        <p>
+          I build systems that help teams move faster. I care about inclusive,
+          accessible experiences and practical craft.
+        </p>
+        <p>
+          Outside of my design work, I'm passionate about storytelling and
+          creative expression. My personal project, Aerial Books, is an
+          evolving digital bookstore exploring new ways to connect stories with
+          readers.
+        </p>
+        <p>
+          I'm driven by curiosity, collaboration, and the belief that great
+          design can improve lives in both big and small ways. Let's create
+          meaningful experiences together.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight" aria-labelledby="gallery-heading">
+    <div class="container">
+      <p class="eyebrow">Things I care about</p>
+      <h2 id="gallery-heading">
+        Yes, I care a lot about my dogs! But I also love photography.
+      </h2>
+      <ul class="gallery">
+        {
+          gallery.map((photo) => (
+            <li class="gallery__item">
+              <figure>
+                <img src={photo.src} alt={photo.caption} width="400" height="400" loading="lazy" />
+                <figcaption>{photo.caption}</figcaption>
+              </figure>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <CtaSection />
+</BaseLayout>
+
+<style>
+  .about {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    gap: var(--space-8);
+    align-items: start;
+  }
+
+  .about__portrait img {
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+  }
+
+  .gallery {
+    list-style: none;
+    margin: var(--space-7) 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+    gap: var(--space-5);
+  }
+
+  .gallery__item img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    background: var(--color-bg-subtle);
+  }
+
+  .gallery__item figcaption {
+    margin-block-start: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  @media (max-width: 720px) {
+    .about {
+      grid-template-columns: 1fr;
+    }
+
+    .about__portrait img {
+      max-width: 320px;
+    }
+  }
+</style>

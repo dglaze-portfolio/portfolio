@@ -1,0 +1,45 @@
+---
+import { CONTACT_URL } from '../data/site';
+
+interface Props {
+  heading?: string;
+  body?: string;
+  buttonLabel?: string;
+  href?: string;
+}
+
+const {
+  heading = "Let's connect",
+  body = "Interested in collaborating or learning more about my work? Let's chat.",
+  buttonLabel = "Let's chat",
+  href = CONTACT_URL,
+} = Astro.props;
+---
+
+<section class="cta section--tight">
+  <div class="container cta__inner">
+    <h2>{heading}</h2>
+    <p class="cta__body">{body}</p>
+    <a class="button" href={href} rel="noopener" target="_blank">{buttonLabel}</a>
+  </div>
+</section>
+
+<style>
+  .cta {
+    text-align: center;
+  }
+
+  .cta__inner {
+    max-width: var(--container-narrow);
+  }
+
+  .cta__body {
+    margin-block-start: var(--space-4);
+    color: var(--color-text-secondary);
+    font-size: var(--text-md);
+  }
+
+  .cta .button {
+    margin-block-start: var(--space-6);
+  }
+</style>

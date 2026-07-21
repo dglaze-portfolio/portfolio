@@ -1,0 +1,139 @@
+/* ============================================================
+   TOKENS — LAYER 1: PRIMITIVES
+   ------------------------------------------------------------
+   Raw design values. Nothing in the site references these
+   directly except theme.css (the semantic layer).
+   Palette: "Instrument" direction — magenta signal on cool
+   neutrals (Claude Design, Home Page Directions 3a).
+   ============================================================ */
+
+:root {
+  /* ---- Color primitives ---------------------------------- */
+  /* Neutrals — cool gray ramp */
+  --neutral-0: #ffffff;
+  --neutral-25: #f3f5f6;
+  --neutral-50: #e8ecef;
+  --neutral-100: #dce2e6;
+  --neutral-200: #b9c2c9;
+  --neutral-300: #8a939b;
+  --neutral-500: #66707a;
+  --neutral-600: #4a5763;
+  --neutral-800: #2c353f;
+  --neutral-900: #11161c;
+
+  /* Magenta — the signal ramp. 400 is the base.
+     Reserved for primary interaction; never decoration. */
+  --magenta-50: #fce9fa;
+  --magenta-100: #f6c4f2;
+  --magenta-200: #ec94e6;
+  --magenta-300: #d95bdc;
+  --magenta-400: #b81bc2;
+  --magenta-600: #8e0f97;
+  --magenta-800: #5c0a63;
+
+  /* Status — hue-separated from magenta so state never reads
+     as accent. */
+  --state-confirmed: #1d7a5f;
+  --state-review: #8a5a08;
+  --state-stopped: #b03a16;
+
+  /* Dark surfaces — for designed dark sections (hero, CTA,
+     footer) and an optional whole-site dark theme. */
+  --dark-page: #0f1319;
+  --dark-surface: #171c23;
+  --dark-fill: #1f252d;
+  --dark-border: #2a313a;
+  --dark-border-control: #4a535e;
+  --dark-text-muted: #7c8792;
+  --dark-text-secondary: #a8b2bc;
+  --dark-text-primary: #e6ebf0;
+
+  /* Glass surfaces — translucent whites for cards sitting on the
+     gradient page (design: Home Page Directions 3c). */
+  --glass-surface: rgb(255 255 255 / 0.045);
+  --glass-fill: rgb(255 255 255 / 0.07);
+  --glass-chip: rgb(255 255 255 / 0.06);
+  --glass-border: rgb(255 255 255 / 0.09);
+  --glass-border-strong: rgb(255 255 255 / 0.22);
+  --glass-ornament: rgb(255 255 255 / 0.14);
+
+  /* The continuous vertical magenta gradient — the home page canvas. */
+  --gradient-page: linear-gradient(
+    180deg,
+    #120a16 0%,
+    #1b0d22 20%,
+    #241030 38%,
+    #331442 55%,
+    #251030 72%,
+    #180b1e 88%,
+    #120a16 100%
+  );
+
+  /* ---- Typography primitives ------------------------------ */
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, monospace;
+
+  /* Fluid type scale — clamps between mobile and desktop */
+  --text-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.85rem + 0.15vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --text-md: clamp(1.125rem, 1.06rem + 0.3vw, 1.3125rem);
+  --text-lg: clamp(1.3125rem, 1.2rem + 0.55vw, 1.5625rem);
+  --text-xl: clamp(1.625rem, 1.42rem + 1vw, 2.375rem);
+  --text-2xl: clamp(2rem, 1.65rem + 1.75vw, 2.625rem);
+  --text-3xl: clamp(2.5rem, 1.9rem + 3vw, 4.125rem);
+
+  --leading-hero: 1.04;
+  --leading-tight: 1.12;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+  --leading-loose: 1.75;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.15em;
+
+  /* ---- Space primitives (4px base grid, fluid at large sizes) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: clamp(3rem, 2.4rem + 3vw, 4.5rem);
+  --space-9: clamp(4rem, 3rem + 5vw, 6rem);
+
+  /* ---- Radii ---------------------------------------------- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  /* ---- Elevation ------------------------------------------ */
+  --shadow-sm: 0 1px 2px rgb(17 22 28 / 0.06);
+  --shadow-md: 0 2px 8px rgb(17 22 28 / 0.08), 0 1px 2px rgb(17 22 28 / 0.06);
+  --shadow-lg: 0 8px 24px rgb(17 22 28 / 0.12), 0 2px 6px rgb(17 22 28 / 0.07);
+
+  /* ---- Borders -------------------------------------------- */
+  --border-thin: 1px;
+  --border-thick: 2px;
+
+  /* ---- Motion --------------------------------------------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 400ms;
+
+  /* ---- Layout --------------------------------------------- */
+  --container-max: 74rem;      /* 1184px */
+  --container-narrow: 44rem;   /* 704px — long-form reading width */
+  --container-pad: clamp(1.25rem, 4vw, 3.5rem);
+}

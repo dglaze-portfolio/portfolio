@@ -1,0 +1,145 @@
+---
+import { NAV, SITE } from '../data/site';
+
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+
+const isActive = (href: string) =>
+  href === '/' ? currentPath === '/' : currentPath.startsWith(href);
+---
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="header__brand" href="/">{SITE.name}</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-toggle__button" aria-label="Toggle menu">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </label>
+
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        {
+          NAV.map((item) => (
+            <li>
+              <a
+                class="nav__link"
+                href={item.href}
+                aria-current={isActive(item.href) ? 'page' : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--header-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-block-end: var(--border-thin) solid var(--header-border);
+  }
+
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-5);
+    min-height: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .header__brand {
+    font-family: var(--font-display);
+    font-size: var(--text-md);
+    font-weight: var(--weight-bold);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .nav__list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav__link {
+    font-size: var(--text-sm);
+    font-weight: var(--weight-medium);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    padding-block: var(--space-2);
+    border-block-end: var(--border-thick) solid transparent;
+    transition:
+      color var(--duration-fast) var(--ease-out),
+      border-color var(--duration-fast) var(--ease-out);
+  }
+
+  .nav__link:hover {
+    color: var(--color-text);
+  }
+
+  .nav__link[aria-current='page'] {
+    color: var(--color-text);
+    border-block-end-color: var(--color-accent);
+  }
+
+  /* --- Mobile nav (CSS-only toggle, no JS shipped) --- */
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-toggle__button {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: var(--space-2);
+    cursor: pointer;
+  }
+
+  .nav-toggle__bar {
+    width: 22px;
+    height: 2px;
+    background: var(--color-text);
+    border-radius: var(--radius-full);
+    transition: transform var(--duration-fast) var(--ease-out);
+  }
+
+  @media (max-width: 640px) {
+    .nav-toggle__button {
+      display: flex;
+    }
+
+    .nav {
+      display: none;
+      flex-basis: 100%;
+      padding-block-end: var(--space-4);
+    }
+
+    .nav-toggle:checked ~ .nav {
+      display: block;
+    }
+
+    .nav__list {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-3);
+    }
+
+    .nav__link {
+      font-size: var(--text-base);
+    }
+  }
+</style>

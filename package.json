@@ -1,0 +1,18 @@
+{
+  "name": "dg-website",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio site for Deanna Glaze — built with Astro, deployed on Vercel",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.1.0",
+    "@fontsource-variable/inter": "^5.1.0",
+    "astro": "^5.0.0"
+  }
+}

@@ -1,0 +1,159 @@
+/* ============================================================
+   TOKENS — LAYER 2: SEMANTIC THEME
+   ------------------------------------------------------------
+   Purpose-named tokens that map primitives to roles.
+   Components and pages reference ONLY these (never primitives).
+
+   Accent usage rules (from the palette spec — keep these!):
+   1. Accent appears at most three times per viewport.
+   2. Accent never sets headings or body copy.
+   3. Every accent instance means the system is acting, waiting,
+      or offering the primary next step.
+   4. Status colors are hue-separated from the accent so state
+      is never confused with interaction.
+   5. --color-border-divider is decorative only. Anything a
+      person can operate uses --color-border-control (3:1).
+   ============================================================ */
+
+:root {
+  /* ---- Surfaces ------------------------------------------- */
+  --color-bg: var(--neutral-25);           /* page canvas */
+  --color-bg-raised: var(--neutral-0);     /* cards, panels, header */
+  --color-bg-subtle: var(--neutral-50);    /* inset fills, chips */
+  --color-bg-inverse: var(--neutral-900);
+
+  /* ---- Text ----------------------------------------------- */
+  --color-text: var(--neutral-900);            /* 16.7:1 on page */
+  --color-text-secondary: var(--neutral-600);  /* 6.8:1 on page */
+  --color-text-muted: var(--neutral-500);      /* 4.6:1 on page */
+  --color-text-inverse: var(--dark-text-primary);
+
+  /* ---- Accent (the signal) --------------------------------- */
+  --color-accent: var(--magenta-400);
+  --color-accent-strong: var(--magenta-600);
+  --color-accent-subtle: var(--magenta-50);        /* tint bg */
+  --color-accent-tint-edge: var(--magenta-100);
+  --color-accent-on-subtle: var(--magenta-600);    /* accent text on subtle/tint bgs */
+  --color-text-on-accent: var(--neutral-0);        /* 5.3:1 on magenta-400 */
+  --color-text-on-tint: var(--magenta-800);        /* 10.8:1 on magenta-50 */
+
+  /* ---- Status ---------------------------------------------- */
+  --color-status-confirmed: var(--state-confirmed);
+  --color-status-review: var(--state-review);
+  --color-status-stopped: var(--state-stopped);
+
+  /* ---- Lines & focus --------------------------------------- */
+  --color-border-divider: var(--neutral-100);  /* decorative rules only */
+  --color-border: var(--neutral-200);          /* card & container edges */
+  --color-border-control: var(--neutral-300);  /* operable boundaries, 3:1 */
+  --color-focus-ring: var(--magenta-400);
+
+  /* ---- Interactive ----------------------------------------- */
+  --color-link: var(--magenta-600);      /* 600 stop: safe on page & subtle */
+  --color-link-hover: var(--magenta-800);
+
+  /* Eyebrow labels — accent on light pages, quiet gray on the
+     gradient page (3c keeps the accent for interaction only). */
+  --eyebrow-color: var(--color-link);
+  /* Large ornamental numerals (work-row index, etc.) */
+  --color-ornament: var(--neutral-300);
+
+  /* ---- Component tokens ------------------------------------ */
+  /* Header */
+  --header-bg: var(--color-bg-raised);
+  --header-border: var(--color-border-divider);
+
+  /* Cards */
+  --card-bg: var(--color-bg-raised);
+  --card-border: var(--color-border);
+  --card-radius: var(--radius-lg);
+  --card-shadow: var(--shadow-sm);
+  --card-shadow-hover: var(--shadow-lg);
+
+  /* Buttons */
+  --button-bg: var(--color-accent);
+  --button-bg-hover: var(--color-accent-strong);
+  --button-text: var(--color-text-on-accent);
+  --button-radius: var(--radius-full);
+  /* secondary (outline) button */
+  --button-2-border: var(--color-border-control);
+  --button-2-text: var(--color-text);
+
+  /* Chips / tags */
+  --chip-bg: var(--color-bg-subtle);
+  --chip-text: var(--color-text-secondary);
+  --chip-accent-bg: var(--color-accent-subtle);
+  --chip-accent-text: var(--color-accent-on-subtle);
+
+  /* Footer — always dark, independent of section theming */
+  --footer-bg: var(--neutral-900);
+  --footer-text: var(--dark-text-primary);
+  --footer-text-secondary: var(--dark-text-secondary);
+  --footer-text-muted: var(--dark-text-muted);
+}
+
+/* ------------------------------------------------------------
+   Dark / gradient theme (design: Home Page Directions 3c).
+   The home page sets data-theme="dark" + .page-gradient on
+   <body>: the canvas is one continuous magenta gradient and
+   every surface becomes translucent "glass". Component styles
+   don't change at all — only these tokens remap.
+   Accent stays reserved: nav underline, primary buttons, the
+   one highlight chip, and links. Eyebrows and ornaments go
+   quiet gray.
+   ------------------------------------------------------------ */
+[data-theme='dark'] {
+  --color-bg: transparent;                 /* sections sit on the gradient */
+  --color-bg-raised: var(--glass-surface);
+  --color-bg-subtle: var(--glass-fill);
+  --color-bg-inverse: var(--neutral-25);
+
+  --color-text: var(--dark-text-primary);
+  --color-text-secondary: var(--dark-text-secondary);
+  --color-text-muted: var(--dark-text-muted);
+  --color-text-inverse: var(--neutral-900);
+
+  --color-accent: var(--magenta-300);
+  --color-accent-strong: var(--magenta-200);
+  --color-accent-subtle: var(--magenta-800);
+  --color-accent-tint-edge: var(--magenta-600);
+  --color-accent-on-subtle: var(--magenta-200);
+  --color-text-on-tint: var(--magenta-200);
+
+  --color-border-divider: var(--glass-border);
+  --color-border: var(--glass-border);
+  --color-border-control: var(--glass-border-strong);
+  --color-focus-ring: var(--magenta-300);
+
+  --color-link: var(--magenta-300);
+  --color-link-hover: var(--magenta-200);
+
+  --eyebrow-color: var(--color-text-muted);
+  --color-ornament: var(--glass-ornament);
+
+  --card-bg: var(--glass-surface);
+  --card-border: var(--glass-border);
+  --card-shadow: none;
+  --card-shadow-hover: 0 8px 24px rgb(0 0 0 / 0.35);
+
+  /* Primary button keeps the 400 base — white text passes on it
+     and the filled pill reads identically on light and dark. */
+  --button-bg: var(--magenta-400);
+  --button-bg-hover: var(--magenta-300);
+  --button-2-border: var(--glass-border-strong);
+  --button-2-text: var(--dark-text-primary);
+
+  --chip-bg: var(--glass-chip);
+  --chip-text: var(--dark-text-secondary);
+  /* 3c: the highlight chip is the solid accent pill */
+  --chip-accent-bg: var(--magenta-400);
+  --chip-accent-text: var(--neutral-0);
+}
+
+/* The gradient page canvas + chrome (home). */
+.page-gradient {
+  background: var(--gradient-page);
+  --header-bg: color-mix(in srgb, #120a16 72%, transparent);
+  --header-border: var(--glass-border);
+  --footer-bg: transparent;
+}

@@ -1,0 +1,41 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<article class="value-card">
+  <h3 class="value-card__title">{title}</h3>
+  <p class="value-card__body"><slot /></p>
+</article>
+
+<style>
+  .value-card {
+    background: var(--card-bg);
+    border: var(--border-thin) solid var(--card-border);
+    border-radius: var(--card-radius);
+    padding: var(--space-6);
+    box-shadow: var(--card-shadow);
+  }
+
+  .value-card__title {
+    font-size: var(--text-lg);
+  }
+
+  .value-card__title::after {
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 3px;
+    margin-block-start: var(--space-3);
+    background: var(--color-accent);
+    border-radius: var(--radius-full);
+  }
+
+  .value-card__body {
+    margin-block-start: var(--space-4);
+    color: var(--color-text-secondary);
+  }
+</style>

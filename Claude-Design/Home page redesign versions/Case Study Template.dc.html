@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background:#120A16; font-family:'Inter',sans-serif; }
+  a { color:#D95BDC; text-decoration:none; }
+  a:hover { color:#B81BC2; }
+  * { box-sizing:border-box; }
+</style>
+</helmet>
+
+<div style="width:100%; min-height:100vh; background:linear-gradient(180deg,#120A16 0%,#1B0D22 16%,#241030 30%,#331442 46%,#251030 62%,#1B0D22 78%,#160B1C 90%,#120A16 100%);">
+<div style="max-width:1120px; margin:0 auto;">
+
+  <!-- Header -->
+  <header style="display:flex; align-items:center; justify-content:space-between; padding:22px 40px; border-bottom:1px solid rgb(255 255 255 / 0.09);">
+    <a href="/" style="font-family:'Fraunces',serif; font-size:20px; font-weight:700; color:#F2F4F6; letter-spacing:-0.01em;">Deanna Glaze</a>
+    <nav style="display:flex; gap:32px;">
+      <a href="/" style="color:#B9C2C9; font-size:14px; font-weight:500;">Home</a>
+      <a href="/work" style="color:#F2F4F6; font-size:14px; font-weight:500; border-bottom:2px solid #B81BC2; padding-bottom:3px;">Work</a>
+      <a href="/about" style="color:#B9C2C9; font-size:14px; font-weight:500;">About</a>
+      <a href="/designresources" style="color:#B9C2C9; font-size:14px; font-weight:500;">Design Resources</a>
+    </nav>
+  </header>
+
+  <!-- Back link -->
+  <div style="padding:28px 40px 0;">
+    <a href="/work" style="font-size:14px; font-weight:600; color:#8A939B;">← All work</a>
+  </div>
+
+  <!-- Hero -->
+  <section style="padding:36px 40px 8px;">
+    <p style="margin:0 0 18px; font-size:13px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#8A939B;">Lotic · AI product</p>
+    <h1 style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:56px; line-height:1.05; letter-spacing:-0.02em; color:#F2F4F6; max-width:20ch;">Shipping an AI wellbeing platform from zero in 90 days</h1>
+    <p style="margin:28px 0 0; font-size:20px; line-height:1.6; color:#B9C2C9; max-width:62ch; text-wrap:pretty;">Lotic turned spoken personal narratives into insights across eight dimensions of wellbeing. The company had three months to launch and no defined strategy or roadmap. I led product and design from the starting point to a shipped MVP, running a two-phase release that put a testable Alpha in front of users in the first 30 days.</p>
+
+    <!-- Meta grid -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:44px;">
+      <div style="background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:26px 28px;">
+        <p style="margin:0 0 14px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">My role</p>
+        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:8px;">
+          <li style="font-size:15px; color:#F2F4F6; font-weight:600;">Product &amp; Design Lead</li>
+          <li style="font-size:15px; color:#B9C2C9;">Product strategy &amp; roadmap</li>
+          <li style="font-size:15px; color:#B9C2C9;">Design vision</li>
+          <li style="font-size:15px; color:#B9C2C9;">Conversational UI</li>
+          <li style="font-size:15px; color:#B9C2C9;">UX writing</li>
+        </ul>
+      </div>
+      <div style="background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:26px 28px;">
+        <p style="margin:0 0 14px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">The team</p>
+        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:8px;">
+          <li style="font-size:15px; color:#B9C2C9;">2 product designers</li>
+          <li style="font-size:15px; color:#B9C2C9;">1 data scientist</li>
+          <li style="font-size:15px; color:#B9C2C9;">1 ML engineer</li>
+          <li style="font-size:15px; color:#B9C2C9;">2 behavioral health clinicians</li>
+          <li style="font-size:15px; color:#B9C2C9;">6 engineers</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cover image -->
+  <section style="padding:44px 40px 0;">
+    <div style="aspect-ratio:16/9; border-radius:16px; background:rgb(255 255 255 / 0.07); border:1px solid rgb(255 255 255 / 0.09); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px;">
+      <span style="font-family:'Fraunces',serif; font-size:40px; font-weight:600; color:#B9C2C9;">Lotic</span>
+      <span style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">Hero image · product screens</span>
+    </div>
+  </section>
+
+  <!-- Body: narrow column -->
+  <div style="max-width:760px; margin:0 auto; padding:0 40px;">
+
+    <!-- The Challenge -->
+    <section style="padding:64px 0 0;">
+      <p style="margin:0 0 14px; font-size:13px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">The challenge</p>
+      <h2 style="margin:0 0 20px; font-family:'Fraunces',serif; font-weight:600; font-size:32px; line-height:1.15; letter-spacing:-0.01em; color:#F2F4F6;">Product-market fit against the clock</h2>
+      <p style="margin:0; font-size:17px; line-height:1.7; color:#B9C2C9; text-wrap:pretty;">Lotic was searching for product-market fit. We had three months to launch an AI insights app, limited user research, and no market validation. No roadmap, and no agreed definition of what the product needed to be.</p>
+      <blockquote style="margin:32px 0 0; padding:28px 32px; background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-left:3px solid #B81BC2; border-radius:12px;">
+        <p style="margin:0; font-family:'Fraunces',serif; font-weight:500; font-size:22px; line-height:1.4; color:#F2F4F6; text-wrap:pretty;">How do you align a cross-functional team around something you can put in front of users fast enough to learn from — without committing to a direction you haven't validated?</p>
+        <p style="margin:16px 0 0; font-size:15px; line-height:1.6; color:#B9C2C9;">That was the real problem: the sequencing of decisions under a deadline that left no room to guess wrong twice.</p>
+      </blockquote>
+    </section>
+
+    <!-- Approach -->
+    <section style="padding:56px 0 0;">
+      <p style="margin:0 0 14px; font-size:13px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">Approach</p>
+      <h2 style="margin:0 0 20px; font-family:'Fraunces',serif; font-weight:600; font-size:32px; line-height:1.15; letter-spacing:-0.01em; color:#F2F4F6;">Outcomes first, then the smallest test</h2>
+      <p style="margin:0 0 24px; font-size:17px; line-height:1.7; color:#B9C2C9; text-wrap:pretty;">I set customer outcomes first, then worked backward to the smallest thing that could test them. The release ran in two phases.</p>
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div style="background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:24px 28px;">
+          <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#D95BDC;">Phase one · Alpha · 30 days</p>
+          <p style="margin:0; font-size:16px; line-height:1.65; color:#B9C2C9; text-wrap:pretty;">Three of the eight wellbeing dimensions, delivered as a linear sequence of prompts with basic insight generation. Educational onboarding gave people a sample of the experience before account creation. The goal was to validate the core concept quickly, not to build the whole thing.</p>
+        </div>
+        <div style="background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:24px 28px;">
+          <p style="margin:0 0 8px; font-size:12px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:#D95BDC;">Phase two · MVP</p>
+          <p style="margin:0; font-size:16px; line-height:1.65; color:#B9C2C9; text-wrap:pretty;">All eight dimensions, a dynamic conversational UI that let people move organically between topics, and richer insights. This is where the product found its shape. I organized the work around two small squad teams and continuous research, defining learning objectives for each phase and feeding findings into the next iteration without slowing the build.</p>
+        </div>
+      </div>
+      <div style="aspect-ratio:16/10; margin-top:24px; border-radius:14px; background:rgb(255 255 255 / 0.07); border:1px solid rgb(255 255 255 / 0.09); display:flex; align-items:center; justify-content:center;">
+        <span style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">Diagram · Alpha → MVP roadmap</span>
+      </div>
+    </section>
+
+    <!-- From sequence to conversation -->
+    <section style="padding:56px 0 0;">
+      <h2 style="margin:0 0 20px; font-family:'Fraunces',serif; font-weight:600; font-size:32px; line-height:1.15; letter-spacing:-0.01em; color:#F2F4F6;">From sequence to conversation</h2>
+      <p style="margin:0 0 18px; font-size:17px; line-height:1.7; color:#B9C2C9; text-wrap:pretty;">The Alpha ran on a linear prompt sequence. It worked, but it felt like a form. For the MVP I shifted to a conversational UI so people could move between wellbeing dimensions the way they actually talk about their lives. Someone stressed about work isn't only talking about work — it touches money, relationships, health.</p>
+      <p style="margin:0; font-size:17px; line-height:1.7; color:#B9C2C9; text-wrap:pretty;">The experience relied on the model recognizing these connections and guiding the conversation across dimensions on its own. That wasn't feasible in the timeframe, so I designed the bridge: context-aware prompt sequencing driven by keyword topic mapping, moving people across dimensions where it made sense and letting the system gather richer insights without the model steering.</p>
+      <div style="margin:28px 0 0; padding:28px 32px; background:rgb(184 27 194 / 0.1); border:1px solid rgb(217 91 220 / 0.3); border-radius:12px;">
+        <p style="margin:0; font-size:17px; line-height:1.6; color:#F2F4F6;">The conversational UI drove a <span style="font-weight:700; color:#D95BDC;">27% increase in prompt completion</span> over the Alpha, and became the core interaction model for the platform's long-term engagement strategy.</p>
+      </div>
+      <div style="aspect-ratio:16/10; margin-top:24px; border-radius:14px; background:rgb(255 255 255 / 0.07); border:1px solid rgb(255 255 255 / 0.09); display:flex; align-items:center; justify-content:center;">
+        <span style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">Diagram · MVP conversational flow</span>
+      </div>
+    </section>
+
+    <!-- Designing for trust -->
+    <section style="padding:56px 0 0;">
+      <h2 style="margin:0 0 20px; font-family:'Fraunces',serif; font-weight:600; font-size:32px; line-height:1.15; letter-spacing:-0.01em; color:#F2F4F6;">Designing for trust</h2>
+      <p style="margin:0 0 24px; font-size:17px; line-height:1.7; color:#B9C2C9; text-wrap:pretty;">Lotic asked people to speak out loud about the most personal parts of their lives, and an AI listened and reflected patterns back. It's a tall order to ask for.</p>
+      <blockquote style="margin:0 0 24px; padding:28px 32px; background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-left:3px solid #B81BC2; border-radius:12px;">
+        <p style="margin:0; font-family:'Fraunces',serif; font-weight:500; font-style:italic; font-size:21px; line-height:1.45; color:#F2F4F6; text-wrap:pretty;">"It's kind of scary how quickly the AI was able to pinpoint things I'm scared about, and things I wish I got from the relationships in my life."</p>
+      </blockquote>
+      <p style="margin:0 0 18px; font-size:17px; line-height:1.7; color:#B9C2C9; text-wrap:pretty;">Research made the stakes concrete. The insights landed sometimes harder than people expected — powerful and unsettling in equal measure. Others were self-conscious speaking aloud, or unsure what to say. We added a text input option so no one was forced into a modality that made them uncomfortable, and kept people oriented in what the system was doing with what they shared.</p>
+      <p style="margin:0; font-size:17px; line-height:1.7; color:#B9C2C9; text-wrap:pretty;">Transparency and clear boundaries are critical in AI that engages people directly. Working with our clinical behaviorist, we designed safety guardrails into the experience: the system watched for signals of acute distress and, rather than continuing to probe, stepped back and pointed people toward mental health resources.</p>
+    </section>
+
+    <!-- Outcomes -->
+    <section style="padding:56px 0 0;">
+      <p style="margin:0 0 14px; font-size:13px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">Outcomes</p>
+      <h2 style="margin:0 0 20px; font-family:'Fraunces',serif; font-weight:600; font-size:32px; line-height:1.15; letter-spacing:-0.01em; color:#F2F4F6;">A validated core loop and a clear next horizon</h2>
+      <p style="margin:0 0 28px; font-size:17px; line-height:1.7; color:#B9C2C9; text-wrap:pretty;">Alpha research validated the core loop — most users found the insights relevant and the self-reflection valuable. It also surfaced what wasn't working: about a third hesitated because they didn't know what to say. That directly shaped the MVP with prompt options and text input alongside voice.</p>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
+        <div style="background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:26px 24px;">
+          <p style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:44px; line-height:1; color:#F2F4F6;">64%</p>
+          <p style="margin:12px 0 0; font-size:14px; line-height:1.5; color:#B9C2C9;">of users made it past account creation in the Alpha</p>
+        </div>
+        <div style="background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:12px; padding:26px 24px;">
+          <p style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:44px; line-height:1; color:#F2F4F6;">91%</p>
+          <p style="margin:12px 0 0; font-size:14px; line-height:1.5; color:#B9C2C9;">of those completed the full prompt sequence</p>
+        </div>
+        <div style="background:rgb(184 27 194 / 0.1); border:1px solid rgb(217 91 220 / 0.3); border-radius:12px; padding:26px 24px;">
+          <p style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:44px; line-height:1; color:#D95BDC;">27%</p>
+          <p style="margin:12px 0 0; font-size:14px; line-height:1.5; color:#F2F4F6;">lift in prompt completion, MVP over Alpha</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future vision -->
+    <section style="padding:56px 0 0;">
+      <h2 style="margin:0 0 20px; font-family:'Fraunces',serif; font-weight:600; font-size:32px; line-height:1.15; letter-spacing:-0.01em; color:#F2F4F6;">Future vision</h2>
+      <p style="margin:0; font-size:17px; line-height:1.7; color:#B9C2C9; text-wrap:pretty;">The MVP was built to become a platform for 30+ day engagement. The next horizon: modular frameworks for insights that adapt as a person's needs change, deeper pattern recognition over time, and a B2B2C clinical partner experience.</p>
+    </section>
+  </div>
+
+  <!-- Next project -->
+  <section style="padding:64px 40px 0;">
+    <a href="/work/vp" style="display:flex; align-items:center; justify-content:space-between; gap:24px; background:rgb(255 255 255 / 0.045); border:1px solid rgb(255 255 255 / 0.09); border-radius:16px; padding:28px 32px;">
+      <div>
+        <p style="margin:0 0 6px; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:#8A939B;">Next project</p>
+        <p style="margin:0; font-family:'Fraunces',serif; font-weight:600; font-size:24px; color:#F2F4F6;">Virgin Pulse — Modular platform strategy</p>
+      </div>
+      <span style="font-size:28px; color:#D95BDC; flex:0 0 auto;">→</span>
+    </a>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding:56px 40px 88px; text-align:center;">
+    <h2 style="margin:0 auto; font-family:'Fraunces',serif; font-weight:600; font-size:36px; line-height:1.12; letter-spacing:-0.01em; color:#F2F4F6; max-width:20ch;">Let's connect</h2>
+    <p style="margin:16px auto 0; font-size:17px; line-height:1.6; color:#B9C2C9; max-width:44ch;">Interested in collaborating or learning more about my work? Let's chat.</p>
+    <a href="https://www.linkedin.com/in/deannaglaze" style="display:inline-flex; align-items:center; gap:8px; margin-top:30px; padding:16px 34px; background:#B81BC2; color:#FFFFFF; font-weight:600; font-size:16px; border-radius:999px;">Get in touch →</a>
+  </section>
+
+  <!-- Footer -->
+  <footer style="padding:44px 40px; display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgb(255 255 255 / 0.09);">
+    <div>
+      <p style="margin:0; font-family:'Fraunces',serif; font-weight:700; font-size:17px; color:#F2F4F6;">Deanna Glaze</p>
+      <p style="margin:6px 0 0; font-size:13px; color:#B9C2C9; max-width:36ch;">Making complex things clear with words, systems, and AI strategy.</p>
+    </div>
+    <div style="display:flex; gap:24px;">
+      <a href="https://www.linkedin.com/in/deannaglaze" style="color:#B9C2C9; font-size:13px;">LinkedIn</a>
+      <a href="https://www.instagram.com/monkeyshineme/" style="color:#B9C2C9; font-size:13px;">Instagram</a>
+    </div>
+  </footer>
+
+</div>
+</div>
+</x-dc>
+</body>
+</html>
