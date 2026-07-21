@@ -21,7 +21,9 @@ import type { APIRoute } from 'astro';
 export const prerender = false;
 
 const RESEND_ENDPOINT = 'https://api.resend.com/emails';
-const TO = 'dglaze@gmail.com';
+// Must match the Resend account owner's address until deannaglaze.com is
+// verified in Resend — test-mode sends are only delivered to that inbox.
+const TO = 'deannaglaze@gmail.com';
 const FROM = 'Portfolio contact form <onboarding@resend.dev>';
 
 const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
