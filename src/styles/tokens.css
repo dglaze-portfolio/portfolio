@@ -40,6 +40,8 @@
   /* Dark surfaces — for designed dark sections (hero, CTA,
      footer) and an optional whole-site dark theme. */
   --dark-page: #0f1319;
+  --dark-page-deep: #0b0e13;    /* recessed bands (Nightfall CTA) */
+  --dark-page-deepest: #080a10; /* Nightfall footer */
   --dark-surface: #171c23;
   --dark-fill: #1f252d;
   --dark-border: #2a313a;
@@ -57,7 +59,8 @@
   --glass-border-strong: rgb(255 255 255 / 0.22);
   --glass-ornament: rgb(255 255 255 / 0.14);
 
-  /* The continuous vertical magenta gradient — the home page canvas. */
+  /* The continuous vertical magenta gradient — the case-study page
+     canvas (3c). */
   --gradient-page: linear-gradient(
     180deg,
     #120a16 0%,
@@ -67,6 +70,38 @@
     #251030 72%,
     #180b1e 88%,
     #120a16 100%
+  );
+
+  /* Nightfall (Portfolio Home 1b) — the home hero's horizon: a pink
+     glow rising through a navy→purple→magenta ramp. The page canvas
+     around it stays flat --dark-page; the gradient lives in the hero
+     band alone. */
+  --gradient-nightfall-hero:
+    radial-gradient(
+      120% 85% at 50% 122%,
+      rgb(216 91 220 / 0.6) 0%,
+      rgb(120 60 200 / 0.25) 42%,
+      rgb(120 60 200 / 0) 64%
+    ),
+    linear-gradient(
+      180deg,
+      #080a16 0%,
+      #100a26 30%,
+      #241046 52%,
+      #4a1160 72%,
+      #7d1585 100%
+    );
+  /* The soft "sun" that pulses low on the hero horizon. */
+  --gradient-nightfall-sun: radial-gradient(
+    circle,
+    rgb(255 158 199 / 0.55),
+    rgb(255 158 199 / 0) 62%
+  );
+  /* Magenta glow crowning the closing-CTA band. */
+  --gradient-nightfall-cta: radial-gradient(
+    120% 130% at 50% 0%,
+    rgb(184 27 194 / 0.28),
+    rgb(184 27 194 / 0) 58%
   );
 
   /* ---- Typography primitives ------------------------------ */

@@ -39,25 +39,35 @@ Scoped `<style>` blocks in each `.astro` component, plus shared utilities
 (`.container`, `.section`, `.eyebrow`, `.prose`, `.button`,
 `.button--secondary`) in `src/styles/global.css`.
 
-## The gradient page (home)
+## The dark pages: Nightfall (home) and gradient (case studies)
 
-The home page is one continuous canvas: `BaseLayout` gets
-`theme="gradient"`, which puts `data-theme="dark"` + `.page-gradient` on
-`<body>`. The canvas is `--gradient-page` (a seven-stop vertical magenta
-gradient); every surface becomes translucent **glass** (`--glass-*`
-primitives → `--card-bg`, `--color-bg-raised`, etc.); the header goes
-translucent-dark with blur and the footer transparent. Component styles
-don't change at all — only tokens remap.
+Both dark themes share the `[data-theme="dark"]` token remap (glass
+surfaces, dark text roles); a body class then sets the canvas + chrome.
 
-On the gradient page the accent gets *more* restrained, not less:
-eyebrows and ornamental numerals drop to quiet gray
-(`--eyebrow-color` / `--color-ornament`), and magenta appears only on the
-active-nav underline, primary buttons, the one metric chip, and links.
+**Nightfall — home** (`theme="nightfall"` → `.page-nightfall`, from the
+"Portfolio Home" 1b exploration): the body is *flat* dark
+(`--dark-page`) and the gradient lives in the hero band alone —
+`Hero` gets `variant="nightfall"`, painting the horizon ramp
+(`--gradient-nightfall-hero`) with a slow-pulsing sun
+(`--gradient-nightfall-sun`, CSS-only). The closing CTA is a recessed
+band (`--color-bg-recessed`) crowned by a magenta glow
+(`--band-closer-glow`). Per the approved 1b design, Nightfall lifts the
+quiet-gray rule: eyebrows go accent, ornament numerals go
+`--dark-border-control`, and primary buttons carry a magenta glow
+(`--button-shadow`).
+
+**Gradient — case studies** (`theme="gradient"` → `.page-gradient`, the
+3c direction): one continuous canvas, `--gradient-page` (a seven-stop
+vertical magenta gradient). Here the accent stays *more* restrained:
+eyebrows and ornamental numerals drop to quiet gray, and magenta appears
+only on the active-nav underline, primary buttons, the one metric chip,
+and links.
 
 `data-theme="dark"` also works on any individual section of a light page
 if a dark band is ever needed again.
 
 ```astro
+<BaseLayout theme="nightfall">  <!-- 1b: flat dark, horizon hero (home) -->
 <BaseLayout theme="gradient">   <!-- 3c: whole page on the gradient -->
 ```
 

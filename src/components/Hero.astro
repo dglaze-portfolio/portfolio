@@ -4,6 +4,11 @@
  * Heading comes through the slot so copy can include <em> for the
  * italic Fraunces moment. If `image` is provided it fills the circular
  * frame; otherwise the DG monogram shows.
+ *
+ * variant="nightfall" (design: Portfolio Home 1b) paints the band with
+ * the horizon gradient — pink glow rising into magenta at the bottom
+ * edge — plus a slow-pulsing "sun" low on the horizon (CSS-only;
+ * freezes under prefers-reduced-motion via the global rule).
  */
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
@@ -19,6 +24,7 @@ interface Props {
   image?: ImageMetadata;
   imageAlt?: string;
   monogram?: string;
+  variant?: 'default' | 'nightfall';
 }
 
 const {
@@ -31,10 +37,11 @@ const {
   image,
   imageAlt = '',
   monogram = 'DG',
+  variant = 'default',
 } = Astro.props;
 ---
 
-<section class="hero">
+<section class:list={['hero', { 'hero--nightfall': variant === 'nightfall' }]}>
   <div class="container hero__inner">
     <div class="hero__copy">
       {
@@ -91,6 +98,48 @@ const {
     background: var(--color-bg);
     color: var(--color-text);
     padding-block: var(--space-8) var(--space-9);
+  }
+
+  /* ---- Nightfall (1b): the horizon gradient lives here ---- */
+  .hero--nightfall {
+    position: relative;
+    overflow: hidden;
+    background: var(--band-hero, var(--color-bg));
+  }
+
+  /* The soft pulsing "sun" low on the horizon */
+  .hero--nightfall::before {
+    content: '';
+    position: absolute;
+    inset-block-end: -14%;
+    inset-inline-start: 32%;
+    width: 36%;
+    height: 52%;
+    border-radius: 50%;
+    background: var(--band-hero-sun, none);
+    animation: sun-pulse 9s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .hero--nightfall .hero__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero--nightfall .hero__dot {
+    background: var(--color-accent);
+    box-shadow: 0 0 0 4px
+      color-mix(in srgb, var(--color-accent) 28%, transparent);
+  }
+
+  @keyframes sun-pulse {
+    0%,
+    100% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 1;
+    }
   }
 
   .hero__inner {

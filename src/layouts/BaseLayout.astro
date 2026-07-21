@@ -11,8 +11,11 @@ interface Props {
   /** Page title — shown as "<title> — Deanna Glaze" */
   title?: string;
   description?: string;
-  /** 'gradient' = the 3c continuous magenta-gradient dark page (home) */
-  theme?: 'light' | 'gradient';
+  /**
+   * 'gradient'  = the 3c continuous magenta-gradient dark page (case studies)
+   * 'nightfall' = the 1b flat-dark page with the horizon-gradient hero (home)
+   */
+  theme?: 'light' | 'gradient' | 'nightfall';
 }
 
 const { title, description = SITE.description, theme = 'light' } = Astro.props;
@@ -41,8 +44,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:card" content="summary" />
   </head>
   <body
-    data-theme={theme === 'gradient' ? 'dark' : undefined}
-    class:list={{ 'page-gradient': theme === 'gradient' }}
+    data-theme={theme === 'light' ? undefined : 'dark'}
+    class:list={{
+      'page-gradient': theme === 'gradient',
+      'page-nightfall': theme === 'nightfall',
+    }}
   >
     <a class="skip-link" href="#main">Skip to content</a>
     <SiteHeader />

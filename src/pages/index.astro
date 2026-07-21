@@ -13,7 +13,7 @@ const approach = [
   {
     n: '01',
     title: 'Clarity & shared ownership',
-    body: 'Inclusive by default. Bring in quieter voices early. Context is shared, ownership is clear.',
+    body: 'Inclusive by default. Bring in quieter voices early; ownership stays clear.',
   },
   {
     n: '02',
@@ -23,24 +23,17 @@ const approach = [
   {
     n: '03',
     title: 'Systems-level impact',
-    body: 'Patterns, naming, and guidance that scales across.',
+    body: 'Patterns, naming, and guidance that scale across teams.',
   },
   {
     n: '04',
     title: 'Glass Box',
-    body: 'When software acts on your behalf, you should see what it is doing and be able to control it.',
+    body: 'When software acts on your behalf, you should see it and stay in control.',
   },
-];
-
-const values = [
-  'Clarity & shared ownership',
-  'Evidence-led strategy',
-  'Systems-level impact',
-  'AI with intention',
 ];
 ---
 
-<BaseLayout theme="gradient">
+<BaseLayout theme="nightfall">
   <Hero
     eyebrow="Product Design Leader · AI-UX"
     sub="Product designer working on agentic AI. I design the interaction model for systems that act on people's behalf, and build the tooling that gets it shipped."
@@ -50,23 +43,18 @@ const values = [
     secondaryHref="/about"
     image={deannaIllus}
     imageAlt="Illustration of Deanna Glaze"
+    variant="nightfall"
   >
     I make complex systems clear, and <em>keep people in control of them</em>.
   </Hero>
 
-  <section class="ai-band" aria-labelledby="ai-heading">
+  <section class="approach" aria-labelledby="approach-heading">
     <div class="container">
-      <div class="ai-band__card">
-      <div>
-        <p class="eyebrow">AI-UX, with intention</p>
-        <h2 id="ai-heading" class="ai-band__heading">
-         Clarity first. Then agency.
-        </h2>
-        <p class="ai-band__body">
-          I start with real use cases and the risks that come with them. I design for transparency and control, then watch how it behaves once it's live and keep refining.
-        </p>
-      </div>
-      <ul class="ai-band__grid">
+      <p class="eyebrow">How I work</p>
+      <h2 id="approach-heading" class="approach__heading">
+        Clarity first. Then agency.
+      </h2>
+      <ul class="approach__grid">
         {
           approach.map((step) => (
             <li class="step">
@@ -77,7 +65,6 @@ const values = [
           ))
         }
       </ul>
-      </div>
     </div>
   </section>
 
@@ -114,21 +101,6 @@ const values = [
     </div>
   </section>
 
-  <section class="values" aria-labelledby="values-heading">
-    <div class="container">
-      <div class="values__card">
-      <p class="eyebrow" id="values-heading">How I work</p>
-      <p class="values__statement">
-        Inclusive by default. Evidence-led. Systems that do the heavy lifting.
-        And AI designed with intention.
-      </p>
-      <ul class="values__list">
-        {values.map((value) => <li class="values__item">{value}</li>)}
-      </ul>
-      </div>
-    </div>
-  </section>
-
   <section class="closer" aria-labelledby="closer-heading">
     <div class="container closer__inner">
       <h2 id="closer-heading" class="closer__heading">
@@ -143,55 +115,38 @@ const values = [
 </BaseLayout>
 
 <style>
-  /* All home sections sit transparently on the body gradient (3c). */
+  /* Home sections sit on the flat Nightfall canvas (1b); the
+     gradient lives in the hero, the glow in the closer. */
 
-  /* ---- AI approach band (glass card) ---- */
-  .ai-band {
+  /* ---- How I work — compact approach strip (1b) ---- */
+  .approach {
     padding-block: var(--space-7);
   }
 
-  .ai-band__card {
-    display: grid;
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-    gap: var(--space-8);
-    align-items: start;
-    background: var(--color-bg-raised);
-    border: var(--border-thin) solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: var(--space-7);
-  }
-
-  .ai-band__heading {
-    margin-block-start: var(--space-4);
+  .approach__heading {
+    margin-block-start: var(--space-2);
     font-size: var(--text-xl);
   }
 
-  .ai-band__body {
-    margin-block-start: var(--space-5);
-    color: var(--color-text-secondary);
-    line-height: var(--leading-loose);
-  }
-
-  .ai-band__grid {
+  .approach__grid {
     list-style: none;
-    margin: 0;
+    margin: var(--space-6) 0 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-4);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-6);
   }
 
   .step {
-    background: var(--color-bg-subtle);
-    border: var(--border-thin) solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: var(--space-5);
+    border-block-start: var(--border-thin) solid var(--color-border);
+    padding-block-start: var(--space-4);
   }
 
   .step__number {
+    display: block;
     font-family: var(--font-display);
     font-size: var(--text-md);
-    color: var(--color-text-muted);
+    color: var(--color-accent);
   }
 
   .step__title {
@@ -237,49 +192,13 @@ const values = [
     gap: var(--space-4);
   }
 
-  /* ---- Values band (glass card) ---- */
-  .values {
-    padding-block: var(--space-2) var(--space-7);
-  }
-
-  .values__card {
-    background: var(--color-bg-raised);
-    border: var(--border-thin) solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: var(--space-7);
-  }
-
-  .values__statement {
-    margin-block-start: var(--space-5);
-    font-family: var(--font-display);
-    font-weight: var(--weight-medium);
-    font-size: var(--text-xl);
-    line-height: var(--leading-snug);
-    letter-spacing: -0.01em;
-    max-width: 34ch;
-  }
-
-  .values__list {
-    list-style: none;
-    margin: var(--space-6) 0 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-6);
-  }
-
-  .values__item {
-    font-size: var(--text-sm);
-    font-weight: var(--weight-semibold);
-    color: var(--color-text-secondary);
-    border-inline-start: var(--border-thick) solid var(--color-border-control);
-    padding-inline-start: var(--space-4);
-  }
-
-  /* ---- Closing CTA ---- */
+  /* ---- Closing CTA — recessed band with magenta glow (1b) ---- */
   .closer {
-    padding-block: var(--space-7) var(--space-9);
+    padding-block: var(--space-8) var(--space-9);
     text-align: center;
+    background-color: var(--color-bg-recessed);
+    background-image: var(--band-closer-glow);
+    border-block-start: var(--border-thin) solid var(--color-border-divider);
   }
 
   .closer__heading {
@@ -301,22 +220,19 @@ const values = [
   }
 
   @media (max-width: 820px) {
-    .ai-band__card {
-      grid-template-columns: 1fr;
-      padding: var(--space-5);
-    }
-
-    .ai-band__grid {
-      grid-template-columns: 1fr;
+    .approach__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .showcase__head {
       flex-direction: column;
       align-items: flex-start;
     }
+  }
 
-    .values__card {
-      padding: var(--space-5);
+  @media (max-width: 540px) {
+    .approach__grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>

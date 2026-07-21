@@ -144,7 +144,9 @@ a:hover {
   font-weight: var(--weight-semibold);
   font-size: var(--text-sm);
   text-decoration: none;
+  border: var(--border-thin) solid var(--button-outline, transparent);
   border-radius: var(--button-radius);
+  box-shadow: var(--button-shadow, none);
   transition:
     background var(--duration-fast) var(--ease-out),
     translate var(--duration-fast) var(--ease-out);
@@ -158,8 +160,9 @@ a:hover {
 
 .button--secondary {
   background: transparent;
-  border: 1.5px solid var(--button-2-border);
+  border: var(--border-thin) solid var(--button-2-border);
   color: var(--button-2-text);
+  box-shadow: none;
 }
 
 .button--secondary:hover {

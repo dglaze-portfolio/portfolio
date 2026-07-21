@@ -137,10 +137,14 @@
   --card-shadow-hover: 0 8px 24px rgb(0 0 0 / 0.35);
 
   /* Primary button keeps the 400 base — white text passes on it
-     and the filled pill reads identically on light and dark. */
+     and the filled pill reads identically on light and dark. A 1px
+     white outline separates the pill from bright backdrops (the
+     hero-gradient horizon, the CTA glow) where magenta-on-magenta
+     would otherwise melt together. */
   --button-bg: var(--magenta-400);
   --button-bg-hover: var(--magenta-300);
-  --button-2-border: var(--glass-border-strong);
+  --button-outline: var(--neutral-0);
+  --button-2-border: var(--neutral-0);
   --button-2-text: var(--dark-text-primary);
 
   --chip-bg: var(--glass-chip);
@@ -150,10 +154,37 @@
   --chip-accent-text: var(--neutral-0);
 }
 
-/* The gradient page canvas + chrome (home). */
+/* The gradient page canvas + chrome (case studies). */
 .page-gradient {
   background: var(--gradient-page);
   --header-bg: color-mix(in srgb, #120a16 72%, transparent);
   --header-border: var(--glass-border);
   --footer-bg: transparent;
+}
+
+/* ------------------------------------------------------------
+   Nightfall canvas (design: Portfolio Home 1b) — the home page.
+   "Keeps your dark mood, horizon glows through": the body is
+   flat dark and the gradient lives in the hero band alone
+   (--gradient-nightfall-hero, applied by Hero's nightfall
+   variant). Tokens still remap through [data-theme='dark'];
+   this class only sets the canvas + chrome — and, per the
+   approved 1b design, lifts 3c's quiet-gray eyebrows back to
+   accent and gives primary buttons their magenta glow.
+   ------------------------------------------------------------ */
+.page-nightfall {
+  background: var(--dark-page);
+  --header-bg: color-mix(in srgb, #080a16 72%, transparent);
+  --header-border: var(--glass-border);
+  --footer-bg: var(--dark-page-deepest);
+  --eyebrow-color: var(--color-accent);
+  --color-ornament: var(--dark-border-control);
+  --button-shadow: 0 8px 28px rgb(184 27 194 / 0.5);
+
+  /* Band tokens — consumed by Hero (variant="nightfall") and the
+     home page's recessed closing-CTA band. */
+  --band-hero: var(--gradient-nightfall-hero);
+  --band-hero-sun: var(--gradient-nightfall-sun);
+  --band-closer-glow: var(--gradient-nightfall-cta);
+  --color-bg-recessed: var(--dark-page-deep);
 }
