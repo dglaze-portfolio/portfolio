@@ -138,7 +138,9 @@ const approach = [
   }
 
   .step {
-    border-block-start: var(--border-thin) solid var(--color-border);
+    /* Deliberately the stronger border tier: the default divider is
+       too faint against the flat dark canvas (De's call). */
+    border-block-start: var(--border-thin) solid var(--color-border-control);
     padding-block-start: var(--space-4);
   }
 
