@@ -30,5 +30,6 @@ export const SOCIAL = [
   },
 ] as const;
 
-/** Where "Let's chat" CTAs point. Swap for a mailto: or contact page anytime. */
-export const CONTACT_URL = 'https://www.linkedin.com/in/deannaglaze';
+/** Where "Let's chat" CTAs point — the on-site contact form
+    (POSTs to /api/contact, delivered by Resend). */
+export const CONTACT_URL = '/contact';

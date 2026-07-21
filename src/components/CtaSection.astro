@@ -14,13 +14,22 @@ const {
   buttonLabel = "Let's chat",
   href = CONTACT_URL,
 } = Astro.props;
+
+/* Internal links (the /contact form) stay in-tab; external ones
+   (a LinkedIn override, etc.) open in a new tab as before. */
+const external = /^https?:\/\//.test(href);
 ---
 
 <section class="cta section--tight">
   <div class="container cta__inner">
     <h2>{heading}</h2>
     <p class="cta__body">{body}</p>
-    <a class="button" href={href} rel="noopener" target="_blank">{buttonLabel}</a>
+    <a
+      class="button"
+      href={href}
+      rel={external ? 'noopener' : undefined}
+      target={external ? '_blank' : undefined}
+    >{buttonLabel}</a>
   </div>
 </section>
 
