@@ -11,6 +11,12 @@ export default defineConfig({
   // one server route (/api/contact, prerender = false) can run as a
   // Vercel function. Everything else builds to static HTML as before.
   adapter: vercel(),
+  // Astro's built-in CSRF origin check misfires behind Vercel's proxy
+  // (it reconstructs the request URL with the wrong scheme, so every
+  // legitimate form post gets "Cross-site POST form submissions are
+  // forbidden"). Disabled here; /api/contact does its own host-based
+  // origin check instead, which is proxy-tolerant.
+  security: { checkOrigin: false },
   build: {
     format: 'file',
   },

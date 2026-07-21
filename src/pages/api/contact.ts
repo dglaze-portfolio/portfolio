@@ -28,7 +28,39 @@ const FROM = 'Portfolio contact form <onboarding@resend.dev>';
 
 const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 
+/**
+ * Our own cross-site-POST guard, replacing Astro's checkOrigin (disabled
+ * in astro.config — behind Vercel's proxy it compares against a wrongly
+ * reconstructed scheme and rejects legitimate submissions). We compare
+ * HOSTS only, which survives the proxy: the page and the endpoint are
+ * always served from the same host. Also allows the production domain
+ * and *.vercel.app previews explicitly. Worst case for a false-allow is
+ * a spam send to our own inbox — validation + honeypot still apply.
+ */
+const ALLOWED_HOSTS = new Set(['deannaglaze.com', 'www.deannaglaze.com']);
+
+function originAllowed(request: Request): boolean {
+  const origin = request.headers.get('origin');
+  // No Origin header = not a cross-site browser form post.
+  if (!origin || origin === 'null') return true;
+  try {
+    const host = new URL(origin).host;
+    return (
+      host === new URL(request.url).host ||
+      ALLOWED_HOSTS.has(host) ||
+      host.endsWith('.vercel.app')
+    );
+  } catch {
+    return false;
+  }
+}
+
 export const POST: APIRoute = async ({ request, redirect }) => {
+  if (!originAllowed(request)) {
+    console.error('contact: blocked cross-site post from', request.headers.get('origin'));
+    return redirect('/contact/error', 303);
+  }
+
   let data: FormData;
   try {
     data = await request.formData();
