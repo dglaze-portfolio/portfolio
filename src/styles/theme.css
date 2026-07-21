@@ -188,3 +188,20 @@
   --band-closer-glow: var(--gradient-nightfall-cta);
   --color-bg-recessed: var(--dark-page-deep);
 }
+
+/* ------------------------------------------------------------
+   Aurora canvas — interior pages (Work, About). Dark like
+   Nightfall, but the gradient is a continuous burst field down
+   the whole page instead of a hero band with a hard cut: the
+   glows drift past as you scroll. Chrome matches Nightfall
+   (same header seam + footer), and eyebrows/buttons keep the
+   Nightfall accent treatment for family consistency.
+   ------------------------------------------------------------ */
+.page-aurora {
+  background: var(--gradient-aurora);
+  --header-bg: color-mix(in srgb, #080a16 72%, transparent);
+  --header-border: var(--glass-border);
+  --footer-bg: var(--dark-page-deepest);
+  --eyebrow-color: var(--color-accent);
+  --color-ornament: var(--dark-border-control);
+}

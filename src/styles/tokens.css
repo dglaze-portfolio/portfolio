@@ -104,6 +104,40 @@
     rgb(184 27 194 / 0) 58%
   );
 
+  /* Aurora (interior pages: Work, About) — a continuous burst
+     field: soft magenta/purple glows scattered down the whole
+     canvas so scrolling drifts through them; no hard hero-to-dark
+     cut. Burst sizes are fixed lengths (they read the same on
+     short and long pages); positions are percentages, so the
+     field stretches with the content. */
+  --gradient-aurora:
+    radial-gradient(
+      52rem 30rem at 82% 2%,
+      rgb(125 21 133 / 0.4),
+      transparent 68%
+    ),
+    radial-gradient(
+      46rem 28rem at 8% 24%,
+      rgb(120 60 200 / 0.3),
+      transparent 70%
+    ),
+    radial-gradient(
+      50rem 30rem at 92% 52%,
+      rgb(184 27 194 / 0.25),
+      transparent 70%
+    ),
+    radial-gradient(
+      44rem 26rem at 12% 78%,
+      rgb(120 60 200 / 0.28),
+      transparent 70%
+    ),
+    radial-gradient(
+      56rem 26rem at 55% 100%,
+      rgb(216 91 220 / 0.3),
+      transparent 72%
+    ),
+    linear-gradient(180deg, #080a16 0%, #150e24 35%, #170e22 65%, #0f1319 100%);
+
   /* ---- Typography primitives ------------------------------ */
   --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
   --font-body: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI',

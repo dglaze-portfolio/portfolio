@@ -14,8 +14,9 @@ interface Props {
   /**
    * 'gradient'  = the 3c continuous magenta-gradient dark page (case studies)
    * 'nightfall' = the 1b flat-dark page with the horizon-gradient hero (home)
+   * 'aurora'    = dark burst-field canvas for interior pages (Work, About)
    */
-  theme?: 'light' | 'gradient' | 'nightfall';
+  theme?: 'light' | 'gradient' | 'nightfall' | 'aurora';
 }
 
 const { title, description = SITE.description, theme = 'light' } = Astro.props;
@@ -48,6 +49,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     class:list={{
       'page-gradient': theme === 'gradient',
       'page-nightfall': theme === 'nightfall',
+      'page-aurora': theme === 'aurora',
     }}
   >
     <a class="skip-link" href="#main">Skip to content</a>
