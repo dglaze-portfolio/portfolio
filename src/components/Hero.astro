@@ -145,6 +145,22 @@ const {
     z-index: 1;
   }
 
+  /* A darkened band along the bottom edge — the "sea" the boat sits
+     on. Without it the silhouette reads as floating in the sky glow. */
+  .hero--nightfall::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: 0;
+    height: 3.5rem;
+    background: linear-gradient(
+      180deg,
+      rgb(26 10 36 / 0) 0%,
+      rgb(26 10 36 / 0.45) 100%
+    );
+    pointer-events: none;
+  }
+
   .hero--nightfall .hero__dot {
     background: var(--color-accent);
     box-shadow: 0 0 0 4px
@@ -168,7 +184,7 @@ const {
      freezes animation at 0% — the boat simply stays invisible. */
   .hero__boat {
     position: absolute;
-    inset-block-end: 22px;
+    inset-block-end: 10px;
     inset-inline-start: 44%;
     z-index: 1;
     pointer-events: none;
