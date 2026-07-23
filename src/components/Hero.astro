@@ -55,8 +55,8 @@ const {
           </svg>
         </div>
         <div class="hero__boat-wake">
-          <span />
-          <span />
+          <span class="hero__boat-wake--aft" />
+          <span class="hero__boat-wake--bow" />
         </div>
       </div>
     )
@@ -182,9 +182,12 @@ const {
      are Nightfall art-direction values (like the gradient stops),
      not UI tokens. Under prefers-reduced-motion the global rule
      freezes animation at 0% — the boat simply stays invisible. */
+  /* Hull sits slightly below the section edge so its bottom is
+     clipped — the boat reads as riding IN the black sea (the dark
+     section below), not floating above it. */
   .hero__boat {
     position: absolute;
-    inset-block-end: 10px;
+    inset-block-end: -7px;
     inset-inline-start: 44%;
     z-index: 1;
     pointer-events: none;
@@ -201,28 +204,30 @@ const {
     filter: drop-shadow(0 2px 4px rgb(0 0 0 / 0.45));
   }
 
+  /* Ripples ahead of the bow and trailing the stern, at the
+     waterline — not stacked beneath the hull. */
   .hero__boat-wake {
     position: absolute;
-    inset-block-start: 33px;
-    inset-inline-start: 50%;
-    transform: translateX(-50%);
+    inset-block-end: 9px;
+    inset-inline: -32px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
+    justify-content: space-between;
   }
 
   .hero__boat-wake span {
     width: 26px;
     height: 5px;
     border-radius: 50%;
-    background: rgb(255 200 224 / 0.45);
     animation: boat-wake 3s ease-out infinite;
   }
 
-  .hero__boat-wake span:last-child {
+  .hero__boat-wake--aft {
     background: rgb(255 200 224 / 0.35);
     animation-delay: 1.5s;
+  }
+
+  .hero__boat-wake--bow {
+    background: rgb(255 200 224 / 0.45);
   }
 
   @keyframes boat-approach {
