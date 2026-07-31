@@ -1,6 +1,6 @@
 ---
 title: 'Kindle Enterprise Publishing'
-tagline: 'Streamlining fragmented workflows so publishers can manage every title format from one clear dashboard.'
+tagline: 'Replaced a web of legacy publishing tools with a unified platform, allowing publishers manage every book format in one place.'
 client: 'Amazon'
 role: 'Lead UX Designer'
 skills:
