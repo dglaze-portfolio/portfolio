@@ -3,7 +3,9 @@
     "allow": [
       "WebFetch(domain:localhost)",
       "Bash(curl:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(npm run *)",
+      "Bash(npm install *)"
     ]
   }
 }
